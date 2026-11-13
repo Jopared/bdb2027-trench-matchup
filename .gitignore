@@ -20,3 +20,10 @@ kaggle.json
 .idea/
 Thumbs.db
 .DS_Store
+
+# Frozen small data products used by the Kaggle notebook (derived results, not competition data)
+!notebooks/frozen_products/*.csv
+!notebooks/frozen_products/exploratory_tables/*.csv
+
+# simulated-run renders of the figure scripts (not part of the entry)
+figures/sim_*

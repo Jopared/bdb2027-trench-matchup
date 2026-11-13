@@ -1,0 +1,115 @@
+[     0.1s] guards passed: {"sha_script": "8d842b70db03e2b0aa223f827bf0a496cb971ca3ea03f0a7c56563be8c046aca", "git_head": "deba6bc1772192c60a3980ba85438df1127e2b23", "sha_prereg": "1c0bba51eb263b36ffd171f2feb50c00234a4be62a86b2830af918be44a1cb24", "start": "2026-11-07T10:31:05"}
+[     0.1s] step 2: build sets, constants and columns
+[     0.2s] spline block [reg]: correlation before orthonormalisation [0.9198, 0.8814, 0.9952] (db1-db2, db1-db3, db2-db3); after [-0.0, 0.0, -0.0]
+[     0.2s] spline block [A]: correlation before orthonormalisation [0.9193, 0.8807, 0.9952] (db1-db2, db1-db3, db2-db3); after [0.0, -0.0, -0.0]
+[     0.2s] spline block [B]: correlation before orthonormalisation [0.9195, 0.8808, 0.9951] (db1-db2, db1-db3, db2-db3); after [0.0, -0.0, -0.0]
+[     0.3s] spline block [DL]: correlation before orthonormalisation [0.9195, 0.8808, 0.9951] (db1-db2, db1-db3, db2-db3); after [0.0, -0.0, -0.0]
+[     0.5s] spline block [k5]: correlation before orthonormalisation [0.9198, 0.8814, 0.9952] (db1-db2, db1-db3, db2-db3); after [-0.0, 0.0, -0.0]
+[     0.5s] prepare: frame (29269, 75), versions ['reg', 'A', 'B', 'DL', 'k5'], sets 19 in 0.4s
+[     0.6s] step 3: outcomes and V0
+[     0.6s] step 4: PC1
+[     1.3s]   PC1: events 787, pick -0.2039, dropback 0.5772, pass=True
+[     1.3s] step 5: M1 (Bayesian + GLM)
+[     1.3s] fitting M1
+[     9.7s] compiled Bayesian model (logit, n=7214, k=42, groups=['B', 'R']) in 7s
+[   109.7s]   [M1] full fit 100s rhat 1.0078 ess 13420/5178 div 0 ok=True
+[   110.0s] step 6: M2 (PC2) and M0
+[   110.0s] fitting M2
+[   114.5s] compiled Bayesian model (logit, n=7214, k=45, groups=['B', 'R']) in 4s
+[   217.2s]   [M2] full fit 103s rhat 1.0054 ess 12199/5947 div 0 ok=True
+[   217.4s] fitting M0
+[   221.7s] compiled Bayesian model (logit, n=7214, k=26, groups=['B', 'R']) in 4s
+[   300.2s]   [M0] full fit 79s rhat 1.0028 ess 11133/5981 div 0 ok=True
+[   301.1s] step 7: provisional H1 verdict
+[   301.1s]   H1 (Bayesian interval, before qualifiers/contingency): Opposite [-0.299, -0.005]
+[   301.1s] fitting M1-A
+[   305.7s] compiled Bayesian model (logit, n=7720, k=42, groups=['B', 'R']) in 4s
+[   382.8s]   [M1-A] full fit 77s rhat 1.0044 ess 8951/6225 div 0 ok=True
+[   383.1s] fitting M2-A
+[   387.5s] compiled Bayesian model (logit, n=7720, k=45, groups=['B', 'R']) in 4s
+[   436.6s]   [M2-A] full fit 49s rhat 1.0089 ess 8323/5355 div 0 ok=True
+[   437.3s] fitting M1-S1
+[   441.5s] compiled Bayesian model (logit, n=7214, k=43, groups=['B', 'R']) in 4s
+[   543.5s]   [M1-S1] convergence failed (rhat 1.033, ess 8883/5183, div 0.00%): escalating
+[   761.3s]   [M1-S1] escalated fit 320s rhat 1.0046 ess 24622/11861 div 0 ok=True
+[   761.5s] fitting M1-S2
+[   765.9s] compiled Bayesian model (logit, n=7214, k=43, groups=['B', 'R']) in 4s
+[   869.2s]   [M1-S2] full fit 103s rhat 1.0036 ess 12083/5895 div 0 ok=True
+[   869.4s] fitting M1-S3a
+[   869.5s] column hygiene [M1-S3a]: dropped pre0 (constant)
+[   878.7s] compiled Bayesian model (gauss, n=7100, k=41, groups=['B', 'R']) in 9s
+[   955.1s]   [M1-S3a] full fit 76s rhat 1.0029 ess 14151/6280 div 0 ok=True
+[   955.3s] fitting M1-S3b
+[  1060.5s]   [M1-S3b] full fit 105s rhat 1.0056 ess 12392/5993 div 0 ok=True
+[  1060.7s] fitting S5a
+[  1064.8s] compiled Bayesian model (logit, n=7214, k=22, groups=['B']) in 4s
+[  1081.0s]   [S5a] light fit 16s rhat 1.0035 ess 9587/3247 div 0 ok=True
+[  1081.2s] fitting S5b
+[  1085.3s] compiled Bayesian model (logit, n=7214, k=33, groups=['B', 'R']) in 4s
+[  1146.8s]   [S5b] light fit 61s rhat 1.0099 ess 5072/2918 div 0 ok=True
+[  1147.0s] step 9: V5 permutation
+[  1280.2s] V5 permutation: t_obs -2.393, p two-sided 0.0375 (2000 perms, 133s)
+[  1280.2s] step 9: V6 placebo
+[  1280.2s] fitting M1-PL
+[  1285.1s] compiled Bayesian model (logit, n=17791, k=42, groups=['B', 'R']) in 4s
+[  1456.8s]   [M1-PL] full fit 172s rhat 1.0025 ess 7577/6166 div 0 ok=True
+[  1457.1s] fitting M2-PL
+[  1461.9s] compiled Bayesian model (logit, n=17791, k=45, groups=['B', 'R']) in 4s
+[  1605.3s]   [M2-PL] full fit 143s rhat 1.0031 ess 6329/5680 div 0 ok=True
+[  1605.5s] step 9: V7 CV
+[  1629.2s] V7 CV done in 24s: dLL(I4-I2) 2.093 millinats
+[  1629.2s] step 9: V8
+[  1629.7s] column hygiene [M1-season2023]: dropped double_team (constant)
+[  1630.0s] step 10: sensitivities
+[  1634.2s] compiled Bayesian model (logit, n=6394, k=42, groups=['B', 'R']) in 4s
+[  1706.9s]   [SA1] light fit 73s rhat 1.0086 ess 5525/3220 div 0 ok=True
+[  1711.7s] compiled Bayesian model (logit, n=8924, k=42, groups=['B', 'R']) in 4s
+[  1787.6s]   [SA2] light fit 76s rhat 1.0095 ess 5322/3096 div 0 ok=True
+[  1792.2s] compiled Bayesian model (logit, n=7448, k=42, groups=['B', 'R']) in 4s
+[  1872.1s]   [SA3] light fit 80s rhat 1.0074 ess 6483/3151 div 0 ok=True
+[  1876.8s] compiled Bayesian model (logit, n=6643, k=42, groups=['B', 'R']) in 4s
+[  1942.2s]   [SA4] light fit 65s rhat 1.0078 ess 5552/3150 div 0 ok=True
+[  1946.8s] compiled Bayesian model (logit, n=6867, k=42, groups=['B', 'R']) in 4s
+[  2014.5s]   [SA5] light fit 68s rhat 1.0096 ess 6489/2920 div 0 ok=True
+[  2014.7s] column hygiene [SA6]: dropped double_team (constant)
+[  2019.2s] compiled Bayesian model (logit, n=6261, k=41, groups=['B', 'R']) in 4s
+[  2079.2s]   [SA6] light fit 60s rhat 1.0039 ess 6760/3364 div 0 ok=True
+[  2083.7s] compiled Bayesian model (logit, n=5326, k=42, groups=['B', 'R']) in 4s
+[  2113.7s]   [SA7] convergence failed (rhat 1.018, ess 7003/3029, div 0.00%): escalating
+[  2236.5s]   [SA7] escalated fit 153s rhat 1.0013 ess 35143/12140 div 0 ok=True
+[  2241.3s] compiled Bayesian model (logit, n=7000, k=42, groups=['B', 'R']) in 4s
+[  2316.2s]   [SA9] light fit 75s rhat 1.0075 ess 7117/2786 div 0 ok=True
+[  2316.5s] column hygiene [SA15]: dropped f_dash_B (constant)
+[  2316.5s] column hygiene [SA15]: dropped f_dash_R (constant)
+[  2320.6s] compiled Bayesian model (logit, n=4742, k=40, groups=['B', 'R']) in 4s
+[  2357.6s]   [SA15] light fit 37s rhat 1.0071 ess 3387/2827 div 0 ok=True
+[  2362.6s] compiled Bayesian model (logit, n=8087, k=42, groups=['B', 'R']) in 4s
+[  2391.8s]   [SA10] light fit 29s rhat 1.0094 ess 4396/2984 div 0 ok=True
+[  2396.3s] compiled Bayesian model (logit, n=7214, k=42, groups=['B', 'R']) in 4s
+[  2462.7s]   [SA11] light fit 66s rhat 1.0078 ess 4450/2495 div 0 ok=True
+[  2467.2s] compiled Bayesian model (logit, n=8087, k=42, groups=['B', 'R']) in 4s
+[  2499.2s]   [SA12] convergence failed (rhat 1.013, ess 4945/2954, div 0.00%): escalating
+[  2670.8s]   [SA12] escalated fit 204s rhat 1.0021 ess 27831/12034 div 0 ok=True
+[  2675.7s] compiled Bayesian model (logit, n=7214, k=42, groups=['B', 'R']) in 4s
+[  2744.2s]   [SA13] convergence failed (rhat 1.013, ess 5835/2894, div 0.00%): escalating
+[  2959.1s]   [SA13] escalated fit 283s rhat 1.0020 ess 30352/13000 div 0 ok=True
+[  2963.5s] compiled Bayesian model (logit, n=7214, k=39, groups=['B', 'R']) in 4s
+[  3028.3s]   [SA14] light fit 65s rhat 1.0094 ess 7306/3160 div 0 ok=True
+[  3033.2s] compiled Bayesian model (logit, n=7214, k=46, groups=['B', 'R']) in 4s
+[  3104.9s]   [SA16] light fit 72s rhat 1.0072 ess 5930/3078 div 0 ok=True
+[  3109.3s] compiled Bayesian model (logit, n=7214, k=42, groups=['B', 'R', 'D']) in 4s
+[  3322.1s]   [SA17] light fit 213s rhat 1.0079 ess 3207/2932 div 0 ok=True
+[  3326.5s] compiled Bayesian model (logit, n=7214, k=42, groups=['B', 'R']) in 4s
+[  3395.5s]   [SA18_0.5] light fit 69s rhat 1.0060 ess 6566/2666 div 0 ok=True
+[  3400.2s] compiled Bayesian model (logit, n=7214, k=42, groups=['B', 'R']) in 4s
+[  3469.6s]   [SA18_2.5] convergence failed (rhat 1.011, ess 6305/3053, div 0.00%): escalating
+[  3678.6s]   [SA18_2.5] escalated fit 278s rhat 1.0023 ess 36309/11849 div 0 ok=True
+[  3678.9s] step 11: selection
+[  3681.7s] step 12: ratings and surface
+[  3681.7s] fitting R
+[  3685.8s] compiled Bayesian model (logit, n=8087, k=21, groups=['B', 'R']) in 4s
+[  3741.9s]   [R] light fit 56s rhat 1.0038 ess 6194/2887 div 0 ok=True
+[  3742.2s] fitting M1-S2s
+[  3746.4s] compiled Bayesian model (logit, n=7214, k=45, groups=['B', 'R']) in 4s
+[  3821.2s]   [M1-S2s] light fit 75s rhat 1.0074 ess 4342/2726 div 0 ok=True
+[  3829.6s] step 13: final outputs

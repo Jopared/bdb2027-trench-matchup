@@ -1,0 +1,5179 @@
+{
+ "mode": "confirmatory",
+ "facts": {
+  "E0 pairs": 27711,
+  "E0 engaged": 8087,
+  "blocker G": 3365,
+  "blocker T": 3026,
+  "blocker C": 823,
+  "rusher EDGE": 3156,
+  "rusher INTERIOR_LINE": 4058,
+  "nfl DT": 2550,
+  "nfl DE": 2513,
+  "nfl OLB": 1888,
+  "nfl NT": 263,
+  "double_team": 953,
+  "pre0": 114,
+  "pre1": 6831,
+  "pre2": 269,
+  "down1": 2662,
+  "down2": 2410,
+  "down3": 1932,
+  "down4": 210
+ },
+ "constants": {
+  "gap_sd": 1.2534532367676459,
+  "sd_lpd": 1.394544282833403,
+  "raw_pick_diff_sd": 96.42946763851197,
+  "gap_sd_A": 1.054536542236186,
+  "gap_sd_B": 0.9789708929092032,
+  "corr_composites_P": 0.061654964494172855,
+  "knots": [
+   1.6952500283718097,
+   2.50300002098083,
+   3.237449955940247,
+   5.52869999408722
+  ],
+  "dropback_mean": 3.095545050044915,
+  "dropback_sd": 1.2041599359610047
+ },
+ "v0_struct_mismatches": [],
+ "tables": {
+  "R1": [
+   {
+    "Set": "P",
+    "Reps": 7214,
+    "Pressures": 681,
+    "Rate": 0.0944,
+    "Blockers": 69,
+    "Rushers": 97,
+    "Dyads": 1201,
+    "2023 / 2024 / 2025": "431 / 1821 / 4962",
+    "REG": 6867,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "PL",
+    "Reps": 17795,
+    "Pressures": 1442,
+    "Rate": 0.081,
+    "Blockers": 73,
+    "Rushers": 98,
+    "Dyads": 1502,
+    "2023 / 2024 / 2025": "991 / 4635 / 12169",
+    "REG": 16916,
+    "Rows dropped (reason)": "4 (null context covariate)"
+   },
+   {
+    "Set": "ALL",
+    "Reps": 25009,
+    "Pressures": 2123,
+    "Rate": 0.0849,
+    "Blockers": 75,
+    "Rushers": 98,
+    "Dyads": 1541,
+    "2023 / 2024 / 2025": "1422 / 6456 / 17131",
+    "REG": 23783,
+    "Rows dropped (reason)": "4 (null context covariate)"
+   },
+   {
+    "Set": "P-A",
+    "Reps": 7720,
+    "Pressures": 728,
+    "Rate": 0.0943,
+    "Blockers": 75,
+    "Rushers": 97,
+    "Dyads": 1281,
+    "2023 / 2024 / 2025": "431 / 1882 / 5407",
+    "REG": 7297,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "PL-A",
+    "Reps": 18849,
+    "Pressures": 1532,
+    "Rate": 0.0813,
+    "Blockers": 79,
+    "Rushers": 98,
+    "Dyads": 1593,
+    "2023 / 2024 / 2025": "991 / 4752 / 13106",
+    "REG": 17830,
+    "Rows dropped (reason)": "4 (null context covariate)"
+   },
+   {
+    "Set": "P-B",
+    "Reps": 8087,
+    "Pressures": 764,
+    "Rate": 0.0945,
+    "Blockers": 79,
+    "Rushers": 97,
+    "Dyads": 1342,
+    "2023 / 2024 / 2025": "431 / 2046 / 5610",
+    "REG": 7664,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "P-DL",
+    "Reps": 8087,
+    "Pressures": 764,
+    "Rate": 0.0945,
+    "Blockers": 79,
+    "Rushers": 97,
+    "Dyads": 1342,
+    "2023 / 2024 / 2025": "431 / 2046 / 5610",
+    "REG": 7664,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA1",
+    "Reps": 6394,
+    "Pressures": 612,
+    "Rate": 0.0957,
+    "Blockers": 69,
+    "Rushers": 97,
+    "Dyads": 1165,
+    "2023 / 2024 / 2025": "385 / 1623 / 4386",
+    "REG": 6096,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA2",
+    "Reps": 8924,
+    "Pressures": 791,
+    "Rate": 0.0886,
+    "Blockers": 70,
+    "Rushers": 97,
+    "Dyads": 1269,
+    "2023 / 2024 / 2025": "515 / 2229 / 6180",
+    "REG": 8488,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA3",
+    "Reps": 7448,
+    "Pressures": 695,
+    "Rate": 0.0933,
+    "Blockers": 70,
+    "Rushers": 97,
+    "Dyads": 1212,
+    "2023 / 2024 / 2025": "442 / 1879 / 5127",
+    "REG": 7085,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA4",
+    "Reps": 6643,
+    "Pressures": 641,
+    "Rate": 0.0965,
+    "Blockers": 69,
+    "Rushers": 97,
+    "Dyads": 1164,
+    "2023 / 2024 / 2025": "401 / 1663 / 4579",
+    "REG": 6329,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA5",
+    "Reps": 6867,
+    "Pressures": 646,
+    "Rate": 0.0941,
+    "Blockers": 68,
+    "Rushers": 97,
+    "Dyads": 1169,
+    "2023 / 2024 / 2025": "427 / 1771 / 4669",
+    "REG": 6867,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA6",
+    "Reps": 6261,
+    "Pressures": 618,
+    "Rate": 0.0987,
+    "Blockers": 68,
+    "Rushers": 96,
+    "Dyads": 1120,
+    "2023 / 2024 / 2025": "431 / 1584 / 4246",
+    "REG": 5992,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA7",
+    "Reps": 5326,
+    "Pressures": 445,
+    "Rate": 0.0836,
+    "Blockers": 69,
+    "Rushers": 71,
+    "Dyads": 895,
+    "2023 / 2024 / 2025": "331 / 1279 / 3716",
+    "REG": 5066,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA9",
+    "Reps": 7000,
+    "Pressures": 647,
+    "Rate": 0.0924,
+    "Blockers": 69,
+    "Rushers": 97,
+    "Dyads": 1190,
+    "2023 / 2024 / 2025": "427 / 1783 / 4790",
+    "REG": 6676,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA11",
+    "Reps": 7214,
+    "Pressures": 681,
+    "Rate": 0.0944,
+    "Blockers": 69,
+    "Rushers": 97,
+    "Dyads": 1201,
+    "2023 / 2024 / 2025": "431 / 1821 / 4962",
+    "REG": 6867,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA13",
+    "Reps": 7214,
+    "Pressures": 681,
+    "Rate": 0.0944,
+    "Blockers": 69,
+    "Rushers": 97,
+    "Dyads": 1201,
+    "2023 / 2024 / 2025": "431 / 1821 / 4962",
+    "REG": 6867,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "SA15",
+    "Reps": 4742,
+    "Pressures": 437,
+    "Rate": 0.0922,
+    "Blockers": 57,
+    "Rushers": 77,
+    "Dyads": 770,
+    "2023 / 2024 / 2025": "295 / 1241 / 3206",
+    "REG": 4509,
+    "Rows dropped (reason)": "0"
+   },
+   {
+    "Set": "R (E0 & engaged_primary)",
+    "Reps": 8087,
+    "Pressures": 764,
+    "Rate": 0.0945,
+    "Blockers": 79,
+    "Rushers": 97,
+    "Dyads": 1342,
+    "2023 / 2024 / 2025": "431 / 2046 / 5610",
+    "REG": 7664,
+    "Rows dropped (reason)": "0"
+   }
+  ],
+  "R2": [
+   {
+    "Check": "V0 counts and join",
+    "Expected": "Section 2.3",
+    "Observed": "all section 2.3 counts match (19 sets, 19 facts); outcome join 1:1 (no rows lost or duplicated); no nulls in pressure_allowed on P",
+    "Status": "PASS"
+   },
+   {
+    "Check": "PC1 events",
+    "Expected": "787",
+    "Observed": "787",
+    "Status": ""
+   },
+   {
+    "Check": "PC1 pick coefficient",
+    "Expected": "-0.204 +/- 0.003",
+    "Observed": "-0.2039 (SE 0.0486)",
+    "Status": "PASS"
+   },
+   {
+    "Check": "PC1 dropback coefficient",
+    "Expected": "0.577 +/- 0.003",
+    "Observed": "0.5772",
+    "Status": "PASS"
+   },
+   {
+    "Check": "PC2 M2 d_lpick",
+    "Expected": "95% interval < 0",
+    "Observed": "-0.168 [-0.312, -0.031]",
+    "Status": "PASS"
+   },
+   {
+    "Check": "Convergence M0",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0028, min ESS bulk/tail 11133/5981, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M1",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0078, min ESS bulk/tail 13420/5178, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M2",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0054, min ESS bulk/tail 12199/5947, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M1-A",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0044, min ESS bulk/tail 8951/6225, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M2-A",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0089, min ESS bulk/tail 8323/5355, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M1-S1",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0046, min ESS bulk/tail 24622/11861, divergences 0, escalated y",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M1-S2",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0036, min ESS bulk/tail 12083/5895, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M1-S3a",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0029, min ESS bulk/tail 14151/6280, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M1-S3b",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0056, min ESS bulk/tail 12392/5993, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M1-PL",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0025, min ESS bulk/tail 7577/6166, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Convergence M2-PL",
+    "Expected": "R-hat <= 1.01, ESS >= 400, divergences <= 0.1%",
+    "Observed": "max R-hat 1.0031, min ESS bulk/tail 6329/5680, divergences 0, escalated n",
+    "Status": "ok"
+   },
+   {
+    "Check": "Pre-freeze Bayesian calibration (T1)",
+    "Expected": "<= 9 of 100 null intervals exclude 0",
+    "Observed": "6 of 100; coverage 0.94",
+    "Status": "contingency INACTIVE"
+   },
+   {
+    "Check": "Pre-freeze permutation calibration (T1b)",
+    "Expected": "<= 5 of 50 with p < 0.05",
+    "Observed": "2 of 50",
+    "Status": "ok"
+   }
+  ],
+  "R3": [
+   {
+    "Quantity": "beta_gap, log-odds per SD of gap: Bayes",
+    "Value": "mean -0.152, median -0.153 [-0.299, -0.005]"
+   },
+   {
+    "Quantity": "beta_gap per composite-z unit",
+    "Value": "-0.122 [-0.239, -0.004]"
+   },
+   {
+    "Quantity": "P(beta_gap > 0); P(beta_gap < 0.10)",
+    "Value": "0.022; 0.999"
+   },
+   {
+    "Quantity": "GLM mirror",
+    "Value": "-0.154; kappa-calibrated [-0.308, 0.000], p 0.0502; nominal [-0.283, -0.026], SE 0.0644, t df 68, p 0.0195"
+   },
+   {
+    "Quantity": "AME, percentage points per rep (+1 SD gap)",
+    "Value": "-1.060 [-2.017, -0.102]"
+   },
+   {
+    "Quantity": "Extra pressures per 100 engaged reps",
+    "Value": "-1.060 [-2.017, -0.102]"
+   },
+   {
+    "Quantity": "Reps per extra pressure",
+    "Value": "-94.4 [-984.7, -49.6]"
+   },
+   {
+    "Quantity": "Base-rate pp change (power-simulation convention)",
+    "Value": "-1.235 [-2.283, -0.043]"
+   },
+   {
+    "Quantity": "Pick-difference SDs per gap SD (k)",
+    "Value": "-0.896 [-4.082, 0.035]"
+   },
+   {
+    "Quantity": "Pick ratio exp(delta); slots at pick 64",
+    "Value": "0.287 [0.003, 1.050]; -159.13 [-18911.977, 3.037]"
+   },
+   {
+    "Quantity": "MDE (section 12), log-odds / pp / pick-difference SDs",
+    "Value": "0.247 / 2.35 / 1.23"
+   },
+   {
+    "Quantity": "Verdict category",
+    "Value": "Opposite; decision basis: bayes"
+   },
+   {
+    "Quantity": "Q1 GLM mirror agrees",
+    "Value": "fail: kappa-calibrated CI [-0.308, 0.000]"
+   },
+   {
+    "Quantity": "Q2 Freedman-Lane permutation p",
+    "Value": "pass: p = 0.0375"
+   },
+   {
+    "Quantity": "Q3 placebo ratio",
+    "Value": "pass: ratio = 0.275"
+   },
+   {
+    "Quantity": "Q4 discordant sensitivities",
+    "Value": "fail: discordant: SA12, SA13"
+   },
+   {
+    "Quantity": "Q5 selection",
+    "Value": "pass: SC2 not flagged"
+   },
+   {
+    "Quantity": "Final label",
+    "Value": "Opposite (qualified: Q1); Q4 failed (discordant: SA12, SA13)"
+   }
+  ],
+  "R4": [
+   {
+    "Model": "M0",
+    "Term": "gap",
+    "Bayes median [95%]": "-0.059 [-0.185, 0.070]",
+    "GLM [95% CI]": "-0.054 [-0.159, 0.052] {-0.142, 0.034}",
+    "Pick-equivalent k [95%]": "-0.343 [-2.105, 0.575]"
+   },
+   {
+    "Model": "M1",
+    "Term": "gap",
+    "Bayes median [95%]": "-0.153 [-0.299, -0.005]",
+    "GLM [95% CI]": "-0.154 [-0.308, 0.000] {-0.283, -0.026}",
+    "Pick-equivalent k [95%]": "-0.896 [-4.082, 0.035]"
+   },
+   {
+    "Model": "M2",
+    "Term": "gap",
+    "Bayes median [95%]": "-0.125 [-0.273, 0.025]",
+    "GLM [95% CI]": "-0.138 [-0.306, 0.031] {-0.278, 0.003}",
+    "Pick-equivalent k [95%]": "-0.741 [-3.860, 0.208]"
+   },
+   {
+    "Model": "M1",
+    "Term": "d_weight",
+    "Bayes median [95%]": "0.068 [-0.126, 0.261]",
+    "GLM [95% CI]": "0.067 [-0.126, 0.261] {-0.094, 0.228}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "s_weight",
+    "Bayes median [95%]": "-0.106 [-0.279, 0.062]",
+    "GLM [95% CI]": "-0.097 [-0.286, 0.092] {-0.254, 0.060}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "d_arm",
+    "Bayes median [95%]": "0.010 [-0.133, 0.159]",
+    "GLM [95% CI]": "-0.006 [-0.168, 0.156] {-0.141, 0.129}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "s_arm",
+    "Bayes median [95%]": "0.048 [-0.110, 0.214]",
+    "GLM [95% CI]": "0.008 [-0.172, 0.187] {-0.142, 0.157}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "d_forty",
+    "Bayes median [95%]": "-0.035 [-0.333, 0.253]",
+    "GLM [95% CI]": "-0.016 [-0.305, 0.273] {-0.257, 0.225}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "s_forty",
+    "Bayes median [95%]": "0.101 [-0.224, 0.438]",
+    "GLM [95% CI]": "0.130 [-0.183, 0.442] {-0.131, 0.390}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "d_ten",
+    "Bayes median [95%]": "-0.100 [-0.388, 0.198]",
+    "GLM [95% CI]": "-0.095 [-0.345, 0.154] {-0.303, 0.112}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "s_ten",
+    "Bayes median [95%]": "-0.036 [-0.348, 0.278]",
+    "GLM [95% CI]": "-0.108 [-0.410, 0.195] {-0.360, 0.144}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "d_shuttle",
+    "Bayes median [95%]": "0.134 [-0.052, 0.320]",
+    "GLM [95% CI]": "0.121 [-0.079, 0.322] {-0.046, 0.289}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "s_shuttle",
+    "Bayes median [95%]": "0.059 [-0.129, 0.237]",
+    "GLM [95% CI]": "0.065 [-0.110, 0.240] {-0.081, 0.211}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "d_cone",
+    "Bayes median [95%]": "-0.181 [-0.353, -0.006]",
+    "GLM [95% CI]": "-0.180 [-0.362, 0.003] {-0.332, -0.027}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "s_cone",
+    "Bayes median [95%]": "-0.056 [-0.230, 0.117]",
+    "GLM [95% CI]": "-0.062 [-0.228, 0.103] {-0.200, 0.076}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "d_ngs",
+    "Bayes median [95%]": "0.078 [-0.114, 0.271]",
+    "GLM [95% CI]": "0.088 [-0.101, 0.278] {-0.070, 0.247}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "s_ngs",
+    "Bayes median [95%]": "0.191 [-0.001, 0.398]",
+    "GLM [95% CI]": "0.157 [-0.059, 0.374] {-0.023, 0.338}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "f_dash_B",
+    "Bayes median [95%]": "-0.027 [-0.394, 0.339]",
+    "GLM [95% CI]": "-0.032 [-0.407, 0.342] {-0.344, 0.280}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "f_dash_R",
+    "Bayes median [95%]": "-0.018 [-0.331, 0.317]",
+    "GLM [95% CI]": "-0.022 [-0.367, 0.324] {-0.309, 0.266}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "f_shuttle_B",
+    "Bayes median [95%]": "0.005 [-0.312, 0.307]",
+    "GLM [95% CI]": "0.009 [-0.368, 0.387] {-0.305, 0.324}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "f_shuttle_R",
+    "Bayes median [95%]": "0.097 [-0.247, 0.457]",
+    "GLM [95% CI]": "0.045 [-0.318, 0.408] {-0.258, 0.348}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "f_cone_B",
+    "Bayes median [95%]": "-0.051 [-0.394, 0.296]",
+    "GLM [95% CI]": "-0.071 [-0.507, 0.366] {-0.435, 0.293}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "f_cone_R",
+    "Bayes median [95%]": "0.001 [-0.394, 0.382]",
+    "GLM [95% CI]": "0.022 [-0.409, 0.452] {-0.337, 0.380}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "sigma_B",
+    "Bayes median [95%]": "0.259 [0.094, 0.427]",
+    "GLM [95% CI]": "",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1",
+    "Term": "sigma_R",
+    "Bayes median [95%]": "0.283 [0.044, 0.501]",
+    "GLM [95% CI]": "",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_weight",
+    "Bayes median [95%]": "0.075 [-0.118, 0.263]",
+    "GLM [95% CI]": "0.073 [-0.111, 0.256] {-0.080, 0.226}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "s_weight",
+    "Bayes median [95%]": "-0.102 [-0.274, 0.070]",
+    "GLM [95% CI]": "-0.088 [-0.277, 0.100] {-0.245, 0.069}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_arm",
+    "Bayes median [95%]": "0.011 [-0.130, 0.157]",
+    "GLM [95% CI]": "-0.005 [-0.170, 0.161] {-0.142, 0.133}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "s_arm",
+    "Bayes median [95%]": "0.037 [-0.123, 0.201]",
+    "GLM [95% CI]": "-0.000 [-0.184, 0.183] {-0.153, 0.153}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_forty",
+    "Bayes median [95%]": "-0.006 [-0.297, 0.280]",
+    "GLM [95% CI]": "-0.011 [-0.304, 0.282] {-0.255, 0.233}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "s_forty",
+    "Bayes median [95%]": "0.095 [-0.240, 0.426]",
+    "GLM [95% CI]": "0.136 [-0.196, 0.467] {-0.140, 0.412}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_ten",
+    "Bayes median [95%]": "-0.137 [-0.425, 0.155]",
+    "GLM [95% CI]": "-0.128 [-0.374, 0.118] {-0.333, 0.077}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "s_ten",
+    "Bayes median [95%]": "-0.022 [-0.322, 0.295]",
+    "GLM [95% CI]": "-0.106 [-0.420, 0.208] {-0.368, 0.156}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_shuttle",
+    "Bayes median [95%]": "0.142 [-0.042, 0.334]",
+    "GLM [95% CI]": "0.134 [-0.066, 0.334] {-0.033, 0.301}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "s_shuttle",
+    "Bayes median [95%]": "0.075 [-0.111, 0.253]",
+    "GLM [95% CI]": "0.082 [-0.091, 0.255] {-0.062, 0.226}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_cone",
+    "Bayes median [95%]": "-0.194 [-0.374, -0.019]",
+    "GLM [95% CI]": "-0.199 [-0.375, -0.023] {-0.345, -0.052}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "s_cone",
+    "Bayes median [95%]": "-0.052 [-0.223, 0.116]",
+    "GLM [95% CI]": "-0.056 [-0.220, 0.108] {-0.193, 0.080}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_ngs",
+    "Bayes median [95%]": "0.019 [-0.179, 0.223]",
+    "GLM [95% CI]": "0.029 [-0.157, 0.216] {-0.126, 0.185}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "s_ngs",
+    "Bayes median [95%]": "0.215 [0.011, 0.418]",
+    "GLM [95% CI]": "0.190 [-0.037, 0.416] {0.001, 0.378}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_dash_B",
+    "Bayes median [95%]": "-0.006 [-0.372, 0.351]",
+    "GLM [95% CI]": "0.006 [-0.354, 0.366] {-0.294, 0.306}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_dash_R",
+    "Bayes median [95%]": "-0.030 [-0.366, 0.305]",
+    "GLM [95% CI]": "-0.021 [-0.382, 0.339] {-0.322, 0.279}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_shuttle_B",
+    "Bayes median [95%]": "0.060 [-0.270, 0.379]",
+    "GLM [95% CI]": "0.055 [-0.338, 0.447] {-0.272, 0.382}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_shuttle_R",
+    "Bayes median [95%]": "0.114 [-0.225, 0.478]",
+    "GLM [95% CI]": "0.055 [-0.309, 0.419] {-0.249, 0.358}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_cone_B",
+    "Bayes median [95%]": "-0.009 [-0.358, 0.345]",
+    "GLM [95% CI]": "-0.042 [-0.477, 0.393] {-0.405, 0.320}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_cone_R",
+    "Bayes median [95%]": "-0.007 [-0.388, 0.375]",
+    "GLM [95% CI]": "0.015 [-0.410, 0.440] {-0.340, 0.369}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "d_lpick",
+    "Bayes median [95%]": "-0.168 [-0.312, -0.031]",
+    "GLM [95% CI]": "-0.138 [-0.280, 0.004] {-0.256, -0.019}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_undr_B",
+    "Bayes median [95%]": "-0.053 [-0.798, 0.639]",
+    "GLM [95% CI]": "-0.051 [-0.635, 0.534] {-0.538, 0.436}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "f_undr_R",
+    "Bayes median [95%]": "0.254 [-0.243, 0.721]",
+    "GLM [95% CI]": "0.214 [-0.311, 0.739] {-0.224, 0.652}",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "sigma_B",
+    "Bayes median [95%]": "0.269 [0.102, 0.433]",
+    "GLM [95% CI]": "",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M2",
+    "Term": "sigma_R",
+    "Bayes median [95%]": "0.275 [0.029, 0.479]",
+    "GLM [95% CI]": "",
+    "Pick-equivalent k [95%]": ""
+   },
+   {
+    "Model": "M1-A",
+    "Term": "gap",
+    "Bayes median [95%]": "-0.154 [-0.288, -0.022]",
+    "GLM [95% CI]": "-0.143 [-0.308, 0.022] {-0.280, -0.006}",
+    "Pick-equivalent k [95%]": "-0.896 [-4.155, -0.058]"
+   },
+   {
+    "Model": "M2-A",
+    "Term": "gap",
+    "Bayes median [95%]": "-0.149 [-0.285, -0.009]",
+    "GLM [95% CI]": "-0.144 [-0.323, 0.035] {-0.293, 0.005}",
+    "Pick-equivalent k [95%]": "-0.830 [-3.060, -0.035]"
+   }
+  ],
+  "R5": [
+   {
+    "ID": "H2",
+    "Model": "M2",
+    "Estimand": "gap",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.125 [-0.273, 0.025]",
+    "P(expected direction)": "0.049",
+    "GLM [95% CI]": "-0.138 [-0.306, 0.031] {-0.278, 0.003}",
+    "n": 7214,
+    "Category (H2, S0 only)": "Inconclusive"
+   },
+   {
+    "ID": "M0",
+    "Model": "M0",
+    "Estimand": "gap",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.059 [-0.185, 0.070]",
+    "P(expected direction)": "0.184",
+    "GLM [95% CI]": "-0.054 [-0.159, 0.052] {-0.142, 0.034}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S0",
+    "Model": "M1-A",
+    "Estimand": "gap",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.154 [-0.288, -0.022]",
+    "P(expected direction)": "0.012",
+    "GLM [95% CI]": "-0.143 [-0.308, 0.022] {-0.280, -0.006}",
+    "n": 7720,
+    "Category (H2, S0 only)": "Opposite"
+   },
+   {
+    "ID": "S0",
+    "Model": "M2-A",
+    "Estimand": "gap",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.149 [-0.285, -0.009]",
+    "P(expected direction)": "0.019",
+    "GLM [95% CI]": "-0.144 [-0.323, 0.035] {-0.293, 0.005}",
+    "n": 7720,
+    "Category (H2, S0 only)": "Opposite"
+   },
+   {
+    "ID": "S1",
+    "Model": "M1-S1",
+    "Estimand": "c_R",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.033 [-0.209, 0.160]",
+    "P(expected direction)": "0.361",
+    "GLM [95% CI]": "-0.064 [-0.260, 0.132] {-0.227, 0.099}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S1",
+    "Model": "M1-S1",
+    "Estimand": "c_B",
+    "Expected": "-",
+    "Bayes median [95%]": "0.156 [0.020, 0.301]",
+    "P(expected direction)": "0.012",
+    "GLM [95% CI]": "0.143 [-0.005, 0.290] {0.020, 0.266}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S1",
+    "Model": "M1-S1",
+    "Estimand": "c_R + c_B",
+    "Expected": "none",
+    "Bayes median [95%]": "0.123 [-0.101, 0.363]",
+    "P(expected direction)": "",
+    "GLM [95% CI]": "0.079 [-0.173, 0.331] {-0.131, 0.289}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S2",
+    "Model": "M1-S2",
+    "Estimand": "gap x edge",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.052 [-0.255, 0.146]",
+    "P(expected direction)": "0.317",
+    "GLM [95% CI]": "0.015 [-0.291, 0.321] {-0.240, 0.270}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S2",
+    "Model": "M1-S2",
+    "Estimand": "gap (interior)",
+    "Expected": ">=0",
+    "Bayes median [95%]": "-0.123 [-0.304, 0.066]",
+    "P(expected direction)": "0.103",
+    "GLM [95% CI]": "-0.163 [-0.384, 0.058] {-0.347, 0.021}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S2",
+    "Model": "M1-S2",
+    "Estimand": "gap (edge)",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.173 [-0.350, -0.002]",
+    "P(expected direction)": "0.024",
+    "GLM [95% CI]": "-0.148 [-0.365, 0.069] {-0.329, 0.033}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S3a",
+    "Model": "M1-S3a",
+    "Estimand": "gap, pp of peak pressure probability",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.851 [-1.793, 0.095]",
+    "P(expected direction)": "0.040",
+    "GLM [95% CI]": "-0.797 [-1.753, 0.159] {-1.594, -0.001}",
+    "n": 7100,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S3b",
+    "Model": "M1-S3b",
+    "Estimand": "gap",
+    "Expected": "+",
+    "Bayes median [95%]": "-0.135 [-0.274, -0.001]",
+    "P(expected direction)": "0.025",
+    "GLM [95% CI]": "-0.127 [-0.296, 0.041] {-0.268, 0.013}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S5",
+    "Model": "S5a",
+    "Estimand": "beta_depth",
+    "Expected": "+",
+    "Bayes median [95%]": "0.322 [0.206, 0.441]",
+    "P(expected direction)": "1.000",
+    "GLM [95% CI]": "0.314 [0.139, 0.488] {0.168, 0.459}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S5",
+    "Model": "S5b",
+    "Estimand": "beta_depth",
+    "Expected": "none",
+    "Bayes median [95%]": "0.318 [0.193, 0.435]",
+    "P(expected direction)": "",
+    "GLM [95% CI]": "0.308 [0.130, 0.486] {0.160, 0.456}",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   },
+   {
+    "ID": "S5",
+    "Model": "S5a/S5b",
+    "Estimand": "share = 1 - med(S5b)/med(S5a)",
+    "Expected": "+",
+    "Bayes median [95%]": "0.011 (point estimate)",
+    "P(expected direction)": "",
+    "GLM [95% CI]": "",
+    "n": 7214,
+    "Category (H2, S0 only)": ""
+   }
+  ],
+  "R6": [
+   {
+    "Statistic": "Observed GLM beta_gap (M1)",
+    "Value": "-0.1542 (t = -2.393)"
+   },
+   {
+    "Statistic": "Null distribution of beta*: mean, SD, 2.5% / 97.5%",
+    "Value": "-0.0136, 0.0819, -0.1641 / 0.1447"
+   },
+   {
+    "Statistic": "Permutation p, two-sided / one-sided (studentized)",
+    "Value": "0.0375 / 0.9770"
+   },
+   {
+    "Statistic": "Permutation p, coefficient-based two-sided",
+    "Value": "0.0535"
+   },
+   {
+    "Statistic": "Placebo M1-PL beta_gap: Bayes / GLM",
+    "Value": "-0.042 [-0.156, 0.071] / -0.051 [-0.178, 0.076] {-0.157, 0.055}"
+   },
+   {
+    "Statistic": "ratio_gap (PL / P)",
+    "Value": "0.275 -> Q3 pass"
+   },
+   {
+    "Statistic": "Pick calibration: M2-PL beta_lpd, ratio_pick",
+    "Value": "-0.080 [-0.179, 0.016], 0.479 (C3 reference about 0.37)"
+   }
+  ],
+  "R7": [
+   {
+    "Table": "information sets",
+    "Item": "I0",
+    "Mean log loss": 0.27814,
+    "Mean Brier": 0.077561,
+    "Columns": 21
+   },
+   {
+    "Table": "information sets",
+    "Item": "I1",
+    "Mean log loss": 0.2828,
+    "Mean Brier": 0.078204,
+    "Columns": 28
+   },
+   {
+    "Table": "information sets",
+    "Item": "I2",
+    "Mean log loss": 0.293,
+    "Mean Brier": 0.08068,
+    "Columns": 44
+   },
+   {
+    "Table": "information sets",
+    "Item": "I3",
+    "Mean log loss": 0.28354,
+    "Mean Brier": 0.078291,
+    "Columns": 30
+   },
+   {
+    "Table": "information sets",
+    "Item": "I4",
+    "Mean log loss": 0.29509,
+    "Mean Brier": 0.081159,
+    "Columns": 46
+   },
+   {
+    "Table": "contrast",
+    "Item": "I4 - I2 (tracking beyond club measures and pick)",
+    "Mean log loss": "2.093 millinats/rep",
+    "Mean Brier": "[-0.829, 5.652] over repetitions",
+    "Columns": "share < 0: 0.10"
+   },
+   {
+    "Table": "contrast",
+    "Item": "I3 - I1 (tracking beyond pick and size)",
+    "Mean log loss": "0.734 millinats/rep",
+    "Mean Brier": "[-0.777, 2.552] over repetitions",
+    "Columns": "share < 0: 0.20"
+   },
+   {
+    "Table": "contrast",
+    "Item": "I2 - I1 (stopwatch beyond pick and size, reference)",
+    "Mean log loss": "10.193 millinats/rep",
+    "Mean Brier": "[6.347, 15.726] over repetitions",
+    "Columns": "share < 0: 0.00"
+   },
+   {
+    "Table": "leave-one-class-out",
+    "Item": "class 2023",
+    "Mean log loss": "n test 4990; LL(I2) 0.30220; LL(I4) 0.31033",
+    "Mean Brier": "dLL 8.131 millinats",
+    "Columns": ""
+   },
+   {
+    "Table": "leave-one-class-out",
+    "Item": "class 2024",
+    "Mean log loss": "n test 4084; LL(I2) 0.29181; LL(I4) 0.29745",
+    "Mean Brier": "dLL 5.644 millinats",
+    "Columns": ""
+   },
+   {
+    "Table": "leave-one-class-out",
+    "Item": "class 2025",
+    "Mean log loss": "n test 2419; LL(I2) 0.26057; LL(I4) 0.26160",
+    "Mean Brier": "dLL 1.030 millinats",
+    "Columns": ""
+   },
+   {
+    "Table": "leave-one-season-out",
+    "Item": "season 2023",
+    "Mean log loss": "n test 431; LL(I2) 0.31092; LL(I4) 0.31176",
+    "Mean Brier": "dLL 0.833 millinats",
+    "Columns": ""
+   },
+   {
+    "Table": "leave-one-season-out",
+    "Item": "season 2024",
+    "Mean log loss": "n test 1821; LL(I2) 0.28459; LL(I4) 0.28363",
+    "Mean Brier": "dLL -0.962 millinats",
+    "Columns": ""
+   },
+   {
+    "Table": "leave-one-season-out",
+    "Item": "season 2025",
+    "Mean log loss": "n test 4962; LL(I2) 0.27477; LL(I4) 0.27563",
+    "Mean Brier": "dLL 0.860 millinats",
+    "Columns": ""
+   },
+   {
+    "Table": "by-season GLM M1",
+    "Item": "2023",
+    "Mean log loss": "beta_gap -0.164 [-1.495, 1.168]",
+    "Mean Brier": "n 431",
+    "Columns": "imprecise (431 reps)"
+   },
+   {
+    "Table": "by-season GLM M1",
+    "Item": "2024",
+    "Mean log loss": "beta_gap -0.279 [-0.606, 0.047]",
+    "Mean Brier": "n 1821",
+    "Columns": ""
+   },
+   {
+    "Table": "by-season GLM M1",
+    "Item": "2025",
+    "Mean log loss": "beta_gap -0.101 [-0.252, 0.050]",
+    "Mean Brier": "n 4962",
+    "Columns": ""
+   }
+  ],
+  "R8": [
+   {
+    "ID": "SA1",
+    "Description": "1.25 yd / 4 frames (double-team flag recomputed)",
+    "Reps": 6394,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.198 [-0.355, -0.042] {-0.329, -0.068}",
+    "Bayes beta_gap [95%]": "-0.200 [-0.341, -0.055]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA2",
+    "Description": "2.0 yd / 4 frames (double-team flag recomputed)",
+    "Reps": 8924,
+    "Blockers / rushers": "70 / 97",
+    "GLM beta_gap [95% CI]": "-0.139 [-0.288, 0.010] {-0.263, -0.015}",
+    "Bayes beta_gap [95%]": "-0.128 [-0.269, 0.012]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA3",
+    "Description": "1.5 yd / 3 frames (double-team flag recomputed)",
+    "Reps": 7448,
+    "Blockers / rushers": "70 / 97",
+    "GLM beta_gap [95% CI]": "-0.157 [-0.314, -0.001] {-0.288, -0.027}",
+    "Bayes beta_gap [95%]": "-0.155 [-0.299, -0.007]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA4",
+    "Description": "1.5 yd / 6 frames (double-team flag recomputed)",
+    "Reps": 6643,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.180 [-0.342, -0.018] {-0.315, -0.045}",
+    "Bayes beta_gap [95%]": "-0.179 [-0.321, -0.036]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA5",
+    "Description": "REG only",
+    "Reps": 6867,
+    "Blockers / rushers": "68 / 97",
+    "GLM beta_gap [95% CI]": "-0.140 [-0.296, 0.015] {-0.270, -0.011}",
+    "Bayes beta_gap [95%]": "-0.139 [-0.285, 0.011]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA6",
+    "Description": "Exclude double teams",
+    "Reps": 6261,
+    "Blockers / rushers": "68 / 96",
+    "GLM beta_gap [95% CI]": "-0.165 [-0.335, 0.006] {-0.307, -0.022}",
+    "Bayes beta_gap [95%]": "-0.158 [-0.308, -0.005]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA7",
+    "Description": "Rushers with NFL position DE/DT/NT",
+    "Reps": 5326,
+    "Blockers / rushers": "69 / 71",
+    "GLM beta_gap [95% CI]": "-0.152 [-0.356, 0.052] {-0.322, 0.018}",
+    "Bayes beta_gap [95%]": "-0.157 [-0.346, 0.029]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA9",
+    "Description": "One pair per (game, play, blocker), smallest min_dist",
+    "Reps": 7000,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.162 [-0.329, 0.004] {-0.301, -0.024}",
+    "Bayes beta_gap [95%]": "-0.157 [-0.308, -0.013]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA15",
+    "Description": "Complete cases for the dash (both players have a forty)",
+    "Reps": 4742,
+    "Blockers / rushers": "57 / 77",
+    "GLM beta_gap [95% CI]": "-0.160 [-0.357, 0.038] {-0.325, 0.005}",
+    "Bayes beta_gap [95%]": "-0.158 [-0.327, 0.012]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA8",
+    "Description": "Dyad-equal weighting w = (N / D) / n_dyad (GLM only)",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.120 [-0.341, 0.102] {-0.304, 0.065}",
+    "Bayes beta_gap [95%]": "(GLM only)",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA10",
+    "Description": "Composite B",
+    "Reps": 8087,
+    "Blockers / rushers": "79 / 97",
+    "GLM beta_gap [95% CI]": "-0.104 [-0.265, 0.058] {-0.238, 0.031}",
+    "Bayes beta_gap [95%]": "-0.102 [-0.233, 0.033]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA11",
+    "Description": "Composite A on the rows of P (common sample)",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.134 [-0.303, 0.035] {-0.275, 0.007}",
+    "Bayes beta_gap [95%]": "-0.131 [-0.278, 0.022]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA12",
+    "Description": "DL-only: rusher composite replaces gap",
+    "Reps": 8087,
+    "Blockers / rushers": "79 / 97",
+    "GLM beta_gap [95% CI]": "-0.060 [-0.234, 0.115] {-0.205, 0.086}",
+    "Bayes beta_gap [95%]": "-0.042 [-0.197, 0.125]",
+    "Discordant?": "yes"
+   },
+   {
+    "ID": "SA13",
+    "Description": "5-frame smoothing composites (O3, D1 at k=5)",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.085 [-0.259, 0.089] {-0.230, 0.060}",
+    "Bayes beta_gap [95%]": "-0.074 [-0.227, 0.083]",
+    "Discordant?": "yes"
+   },
+   {
+    "ID": "SA14",
+    "Description": "No dropback spline",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.107 [-0.243, 0.029] {-0.220, 0.006}",
+    "Bayes beta_gap [95%]": "-0.099 [-0.239, 0.044]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA16",
+    "Description": "M2 plus s_lpick (pick asymmetry)",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.138 [-0.307, 0.031] {-0.279, 0.003}",
+    "Bayes beta_gap [95%]": "-0.128 [-0.277, 0.025]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA17",
+    "Description": "M1 plus dyad random intercept",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.154 [-0.308, 0.000] {-0.283, -0.026}",
+    "Bayes beta_gap [95%]": "-0.146 [-0.294, 0.004]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA18_0.5",
+    "Description": "beta_gap prior Normal(0, 0.5)",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.154 [-0.308, 0.000] {-0.283, -0.026}",
+    "Bayes beta_gap [95%]": "-0.149 [-0.298, 0.005]",
+    "Discordant?": "no"
+   },
+   {
+    "ID": "SA18_2.5",
+    "Description": "beta_gap prior Normal(0, 2.5)",
+    "Reps": 7214,
+    "Blockers / rushers": "69 / 97",
+    "GLM beta_gap [95% CI]": "-0.154 [-0.308, 0.000] {-0.283, -0.026}",
+    "Bayes beta_gap [95%]": "-0.152 [-0.301, -0.006]",
+    "Discordant?": "no"
+   }
+  ],
+  "R9": [
+   {
+    "Check": "SC1 composite OL, in-P vs out-of-P",
+    "Result": "n 69/36; mean difference 0.285 [-0.129, 0.743]; KS p 0.243"
+   },
+   {
+    "Check": "SC1 log_pick OL, in-P vs out-of-P",
+    "Result": "n 69/36; mean difference -1.199 [-1.463, -0.967]; KS p 0.000"
+   },
+   {
+    "Check": "SC1 ngs_athleticism_score OL, in-P vs out-of-P",
+    "Result": "n 69/36; mean difference 6.827 [2.933, 10.674]; KS p 0.020"
+   },
+   {
+    "Check": "SC1 composite DL, in-P vs out-of-P",
+    "Result": "n 97/21; mean difference 0.128 [-0.389, 0.651]; KS p 0.904"
+   },
+   {
+    "Check": "SC1 log_pick DL, in-P vs out-of-P",
+    "Result": "n 97/21; mean difference -0.757 [-0.974, -0.551]; KS p 0.000"
+   },
+   {
+    "Check": "SC1 ngs_athleticism_score DL, in-P vs out-of-P",
+    "Result": "n 97/21; mean difference 7.293 [3.123, 11.660]; KS p 0.015"
+   },
+   {
+    "Check": "SC1 the excluded engaged blockers vs the included",
+    "Result": "10 blockers, 873 engaged reps; mean log pick 3.704 vs 4.272; NGS 78.2 vs 77.9; % missing forty 40.0 vs 17.4"
+   },
+   {
+    "Check": "SC2 gap -> engaged: GLM [95% CI]",
+    "Result": "-0.034 [-0.113, 0.044] {-0.100, 0.031} (n 25005) -> not flagged"
+   },
+   {
+    "Check": "SC3a all-pairs gap",
+    "Result": "-0.080 [-0.200, 0.039] {-0.180, 0.019}; engaged_primary 0.001 [-0.112, 0.115] {-0.093, 0.096} (n 25005)"
+   },
+   {
+    "Check": "SC3b gap, engaged, gap x engaged",
+    "Result": "-0.084 [-0.207, 0.039] {-0.187, 0.018}; 0.001 [-0.114, 0.116] {-0.095, 0.096}; 0.013 [-0.098, 0.124] {-0.080, 0.105}"
+   },
+   {
+    "Check": "SC4 IPW-weighted M1 gap",
+    "Result": "-0.178 [-0.352, -0.005] {-0.323, -0.034} (weights 0.74-14.49)"
+   }
+  ],
+  "R10": [
+   {
+    "Item": "M1 sigma_B",
+    "Value": "0.259 [0.094, 0.427]"
+   },
+   {
+    "Item": "M1 sigma_R",
+    "Value": "0.283 [0.044, 0.501]"
+   },
+   {
+    "Item": "M2 sigma_B",
+    "Value": "0.269 [0.102, 0.433]"
+   },
+   {
+    "Item": "M2 sigma_R",
+    "Value": "0.275 [0.029, 0.479]"
+   },
+   {
+    "Item": "R sigma_B",
+    "Value": "0.223 [0.064, 0.368]"
+   },
+   {
+    "Item": "R sigma_R",
+    "Value": "0.290 [0.131, 0.452]"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 55924 (192 reps)",
+    "Value": "0.414 [0.036, 0.853] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 55930 (117 reps)",
+    "Value": "0.236 [-0.062, 0.623] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 55891 (255 reps)",
+    "Value": "0.216 [-0.047, 0.538] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 58220 (188 reps)",
+    "Value": "0.168 [-0.121, 0.519] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 57299 (50 reps)",
+    "Value": "0.147 [-0.182, 0.549] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 56066 (131 reps)",
+    "Value": "0.136 [-0.166, 0.499] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 58209 (126 reps)",
+    "Value": "0.133 [-0.153, 0.460] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 57183 (169 reps)",
+    "Value": "0.131 [-0.146, 0.456] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 55874 (244 reps)",
+    "Value": "0.128 [-0.135, 0.426] (90%)"
+   },
+   {
+    "Item": "blocker top 10: nfl_id 57128 (192 reps)",
+    "Value": "0.122 [-0.151, 0.438] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 55878 (188 reps)",
+    "Value": "-0.131 [-0.431, 0.137] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 57224 (77 reps)",
+    "Value": "-0.134 [-0.473, 0.168] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 57330 (99 reps)",
+    "Value": "-0.138 [-0.490, 0.165] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 55973 (264 reps)",
+    "Value": "-0.143 [-0.424, 0.111] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 58454 (77 reps)",
+    "Value": "-0.143 [-0.526, 0.180] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 58359 (33 reps)",
+    "Value": "-0.147 [-0.563, 0.187] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 58416 (9 reps)",
+    "Value": "-0.153 [-0.594, 0.205] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 58226 (116 reps)",
+    "Value": "-0.162 [-0.502, 0.119] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 57374 (90 reps)",
+    "Value": "-0.169 [-0.530, 0.125] (90%)"
+   },
+   {
+    "Item": "blocker bottom 10: nfl_id 58358 (91 reps)",
+    "Value": "-0.217 [-0.607, 0.096] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 57156 (173 reps)",
+    "Value": "0.414 [0.064, 0.792] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 58362 (147 reps)",
+    "Value": "0.341 [-0.012, 0.729] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 55947 (278 reps)",
+    "Value": "0.317 [0.010, 0.633] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 55942 (215 reps)",
+    "Value": "0.295 [-0.011, 0.622] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 57160 (344 reps)",
+    "Value": "0.284 [0.002, 0.582] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 56497 (222 reps)",
+    "Value": "0.281 [-0.059, 0.651] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 57142 (146 reps)",
+    "Value": "0.276 [-0.057, 0.645] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 57159 (157 reps)",
+    "Value": "0.242 [-0.107, 0.631] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 55867 (273 reps)",
+    "Value": "0.234 [-0.070, 0.558] (90%)"
+   },
+   {
+    "Item": "rusher top 10: nfl_id 55879 (264 reps)",
+    "Value": "0.232 [-0.064, 0.555] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 57169 (207 reps)",
+    "Value": "-0.184 [-0.558, 0.153] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 57334 (64 reps)",
+    "Value": "-0.186 [-0.625, 0.199] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 58369 (75 reps)",
+    "Value": "-0.199 [-0.665, 0.218] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 55918 (335 reps)",
+    "Value": "-0.211 [-0.530, 0.085] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 55995 (90 reps)",
+    "Value": "-0.212 [-0.689, 0.204] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 58318 (50 reps)",
+    "Value": "-0.241 [-0.728, 0.187] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 58348 (57 reps)",
+    "Value": "-0.252 [-0.746, 0.175] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 58282 (45 reps)",
+    "Value": "-0.259 [-0.734, 0.163] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 55974 (96 reps)",
+    "Value": "-0.268 [-0.727, 0.110] (90%)"
+   },
+   {
+    "Item": "rusher bottom 10: nfl_id 57148 (122 reps)",
+    "Value": "-0.383 [-0.888, 0.020] (90%)"
+   }
+  ]
+ },
+ "design_summary": {
+  "M1": {
+   "n_slopes": 42,
+   "n": 7214,
+   "drops": []
+  },
+  "M2": {
+   "n_slopes": 45,
+   "n": 7214,
+   "drops": []
+  },
+  "M0": {
+   "n_slopes": 26,
+   "n": 7214,
+   "drops": []
+  }
+ },
+ "v0": {
+  "status": "PASS",
+  "text": "all section 2.3 counts match (19 sets, 19 facts); outcome join 1:1 (no rows lost or duplicated); no nulls in pressure_allowed on P"
+ },
+ "pc1": {
+  "n": 8271,
+  "events": 787,
+  "pick": -0.20387287297472892,
+  "pick_se": 0.04855495094163522,
+  "wt": -0.21386434649590738,
+  "wt_se": 0.0449163719220545,
+  "drop": 0.5771954363859144,
+  "drop_se": 0.03158630149267902,
+  "n_pairs": 8271,
+  "pass": true
+ },
+ "meta_M1": {
+  "n_set": 7214,
+  "dropped_ctx": 0,
+  "dropped_y_null": 0,
+  "dropped_x_null": 0,
+  "n": 7214,
+  "ver": "reg",
+  "set": "P",
+  "family": "binomial",
+  "outcome": "press",
+  "blockers": 69,
+  "rushers": 97,
+  "light": false,
+  "idata_path": "C:\\Users\\jm_pa\\Documents\\GitHub\\Big data bowl 2027\\data\\processed\\confirmatory\\idata_M1.nc",
+  "seconds": 108.68549799919128
+ },
+ "pc2": {
+  "summary": {
+   "mean": -0.168576984669389,
+   "median": -0.16762141052233442,
+   "lo": -0.3120536078051854,
+   "hi": -0.031442997434298674,
+   "p_pos": 0.007875,
+   "p_neg": 0.992125
+  },
+  "interval_hi": -0.031442997434298674,
+  "interval_lo": -0.3120536078051854,
+  "pass": true
+ },
+ "units": {
+  "M1": {
+   "logodds": {
+    "mean": -0.15227097454661806,
+    "median": -0.15252700248597068,
+    "lo": -0.2991471569594157,
+    "hi": -0.005056092030377093,
+    "p_pos": 0.021625,
+    "p_neg": 0.978375
+   },
+   "per_z": {
+    "mean": -0.1214811770236345,
+    "median": -0.12168543509393384,
+    "lo": -0.238658410369456,
+    "hi": -0.004033730084271462,
+    "p_pos": 0.021625,
+    "p_neg": 0.978375
+   },
+   "p_lt_sesoi": 0.999375,
+   "ame_pp": {
+    "mean": -1.0674923339666131,
+    "median": -1.0597836305977042,
+    "lo": -2.017252362017887,
+    "hi": -0.10155864400963788,
+    "p_pos": 0.014,
+    "p_neg": 0.986
+   },
+   "reps_per_extra": {
+    "median": -94.35888337282705,
+    "lo": -984.6527686063831,
+    "hi": -49.57237967983765
+   },
+   "base_rate_pp": {
+    "mean": -1.2155036524303433,
+    "median": -1.235164839221456,
+    "lo": -2.283268808272408,
+    "hi": -0.04346258750667876,
+    "p_pos": 0.021625,
+    "p_neg": 0.978375
+   },
+   "pe": {
+    "k": {
+     "mean": -1.0716015888387127,
+     "median": -0.8955437700032439,
+     "lo": -4.0816514071638474,
+     "hi": 0.034862916101570385,
+     "p_pos": 0.02875,
+     "p_neg": 0.97125
+    },
+    "delta": {
+     "mean": -1.4943958691902177,
+     "median": -1.2488754444850958,
+     "lo": -5.6920436343792575,
+     "hi": 0.04861788033234557,
+     "p_pos": 0.02875,
+     "p_neg": 0.97125
+    },
+    "ratio": {
+     "mean": 7.005492749960103e+171,
+     "median": 0.28682717198697716,
+     "lo": 0.0033727012537650243,
+     "hi": 1.0498194398221794,
+     "p_pos": 1.0,
+     "p_neg": 0.0
+    },
+    "slots": {
+     "mean": -5.379365825412285e+92,
+     "median": -159.1308876740685,
+     "lo": -18911.97674012281,
+     "hi": 3.037098378120756,
+     "p_pos": 0.02875,
+     "p_neg": 0.97125
+    }
+   }
+  },
+  "M2": {
+   "logodds": {
+    "mean": -0.12503626730168108,
+    "median": -0.12482921661395241,
+    "lo": -0.2730849127762399,
+    "hi": 0.0254943655410809,
+    "p_pos": 0.048875,
+    "p_neg": 0.951125
+   },
+   "per_z": {
+    "mean": -0.09975343605487788,
+    "median": -0.09958825184085598,
+    "lo": -0.2178660557616494,
+    "hi": 0.020339303288908272,
+    "p_pos": 0.048875,
+    "p_neg": 0.951125
+   },
+   "p_lt_sesoi": 0.998,
+   "ame_pp": {
+    "mean": -0.856573221888857,
+    "median": -0.8740859948324782,
+    "lo": -1.8757873072490443,
+    "hi": 0.1885542207963984,
+    "p_pos": 0.048,
+    "p_neg": 0.952
+   },
+   "reps_per_extra": null,
+   "base_rate_pp": {
+    "mean": -1.0054425550324066,
+    "median": -1.0222582421701731,
+    "lo": -2.1063504712059613,
+    "hi": 0.22187851061693914,
+    "p_pos": 0.048875,
+    "p_neg": 0.951125
+   },
+   "pe": {
+    "k": {
+     "mean": -0.958180426724374,
+     "median": -0.7411629879970426,
+     "lo": -3.8595376064586056,
+     "hi": 0.20775423159844492,
+     "p_pos": 0.0565,
+     "p_neg": 0.9435
+    },
+    "delta": {
+     "mean": -1.3362250360113461,
+     "median": -1.0335846075589976,
+     "lo": -5.382296103467365,
+     "hi": 0.28972247591005806,
+     "p_pos": 0.0565,
+     "p_neg": 0.9435
+    },
+    "ratio": {
+     "mean": 1.899033254516827e+108,
+     "median": 0.3557295293397485,
+     "lo": 0.004597453500428288,
+     "hi": 1.3360566533449374,
+     "p_pos": 1.0,
+     "p_neg": 0.0
+    },
+    "slots": {
+     "mean": -9.309003395710205e+175,
+     "median": -115.9119766276617,
+     "lo": -13857.981345920078,
+     "hi": 16.09783934823539,
+     "p_pos": 0.0565,
+     "p_neg": 0.9435
+    }
+   }
+  },
+  "M0": {
+   "logodds": {
+    "mean": -0.05847741002570905,
+    "median": -0.05904062550703218,
+    "lo": -0.18524104189506507,
+    "hi": 0.06989428476412504,
+    "p_pos": 0.183875,
+    "p_neg": 0.816125
+   },
+   "per_z": {
+    "mean": -0.04665304481283101,
+    "median": -0.04710237588063815,
+    "lo": -0.14778456543999768,
+    "hi": 0.055761382007649185,
+    "p_pos": 0.183875,
+    "p_neg": 0.816125
+   },
+   "p_lt_sesoi": 0.992,
+   "ame_pp": {
+    "mean": -0.4572410765898523,
+    "median": -0.4879624342708192,
+    "lo": -1.3454848229083445,
+    "hi": 0.5010903910304283,
+    "p_pos": 0.175,
+    "p_neg": 0.825
+   },
+   "reps_per_extra": null,
+   "base_rate_pp": {
+    "mean": -0.47786304004786306,
+    "median": -0.4965464838264169,
+    "lo": -1.4803726892725413,
+    "hi": 0.619318541780185,
+    "p_pos": 0.183875,
+    "p_neg": 0.816125
+   },
+   "pe": {
+    "k": {
+     "mean": -0.43437903356473473,
+     "median": -0.34326984938109484,
+     "lo": -2.1051278595506266,
+     "hi": 0.5754013444465794,
+     "p_pos": 0.18975,
+     "p_neg": 0.81025
+    },
+    "delta": {
+     "mean": -0.6057607978403997,
+     "median": -0.4787050059234892,
+     "lo": -2.9356940211696454,
+     "hi": 0.8024226552326309,
+     "p_pos": 0.18975,
+     "p_neg": 0.81025
+    },
+    "ratio": {
+     "mean": 4.404709246605465e+52,
+     "median": 0.6195852317128421,
+     "lo": 0.05309386138282578,
+     "hi": 2.2309415478667747,
+     "p_pos": 1.0,
+     "p_neg": 0.0
+    },
+    "slots": {
+     "mean": -3.467143651430655e+61,
+     "median": -39.29490879510331,
+     "lo": -1141.41256331313,
+     "hi": 35.312500172745764,
+     "p_pos": 0.18975,
+     "p_neg": 0.81025
+    }
+   }
+  },
+  "M2-A": {
+   "logodds": {
+    "mean": -0.1483444947836443,
+    "median": -0.1490101075415155,
+    "lo": -0.2848819602458406,
+    "hi": -0.008699921321723765,
+    "p_pos": 0.01875,
+    "p_neg": 0.98125
+   },
+   "per_z": {
+    "mean": -0.14067269254517628,
+    "median": -0.14130388239134295,
+    "lo": -0.2701489695575055,
+    "hi": -0.008249995114702466,
+    "p_pos": 0.01875,
+    "p_neg": 0.98125
+   },
+   "p_lt_sesoi": 0.99975,
+   "ame_pp": {
+    "mean": -1.0299254990510716,
+    "median": -1.0636571170465032,
+    "lo": -1.8531187416325106,
+    "hi": -0.05837760594200241,
+    "p_pos": 0.019,
+    "p_neg": 0.981
+   },
+   "reps_per_extra": {
+    "median": -94.01525961455866,
+    "lo": -1712.9856284162977,
+    "hi": -53.96308274984295
+   },
+   "base_rate_pp": {
+    "mean": -1.1877365862453342,
+    "median": -1.2084026534171524,
+    "lo": -2.1869200207692274,
+    "hi": -0.07467502046754235,
+    "p_pos": 0.01875,
+    "p_neg": 0.98125
+   },
+   "pe": {
+    "k": {
+     "mean": -1.0083741962830255,
+     "median": -0.8295783204288627,
+     "lo": -3.0595968292517637,
+     "hi": -0.035496689886449245,
+     "p_pos": 0.0205,
+     "p_neg": 0.9795
+    },
+    "delta": {
+     "mean": -1.4173249480777756,
+     "median": -1.1660175897621574,
+     "lo": -4.30043026997594,
+     "hi": -0.04989253427516675,
+     "p_pos": 0.0205,
+     "p_neg": 0.9795
+    },
+    "ratio": {
+     "mean": 3.738666245320153e+51,
+     "median": 0.3116054169644108,
+     "lo": 0.013562727197500216,
+     "hi": 0.9513316878492791,
+     "p_pos": 1.0,
+     "p_neg": 0.0
+    },
+    "slots": {
+     "mean": -4.990480122780909e+104,
+     "median": -141.38796075090414,
+     "lo": -4654.8184964456605,
+     "hi": -3.274122469523861,
+     "p_pos": 0.0205,
+     "p_neg": 0.9795
+    }
+   }
+  },
+  "M1-A": {
+   "logodds": {
+    "mean": -0.15343639120576852,
+    "median": -0.15371826664942698,
+    "lo": -0.2876621169248822,
+    "hi": -0.02151772424298112,
+    "p_pos": 0.011875,
+    "p_neg": 0.988125
+   },
+   "per_z": {
+    "mean": -0.14550125582220283,
+    "median": -0.14576855376055664,
+    "lo": -0.27278534730990295,
+    "hi": -0.020404910954865484,
+    "p_pos": 0.011875,
+    "p_neg": 0.988125
+   },
+   "p_lt_sesoi": 0.999875,
+   "ame_pp": {
+    "mean": -1.086170070746301,
+    "median": -1.0956200551413913,
+    "lo": -1.9569660429287448,
+    "hi": -0.1873417976490878,
+    "p_pos": 0.009,
+    "p_neg": 0.991
+   },
+   "reps_per_extra": {
+    "median": -91.27251690102995,
+    "lo": -533.7837111358951,
+    "hi": -51.099506995196805
+   },
+   "base_rate_pp": {
+    "mean": -1.2272920115434232,
+    "median": -1.2442121036424392,
+    "lo": -2.2057897284410988,
+    "hi": -0.18373960469625797,
+    "p_pos": 0.011875,
+    "p_neg": 0.988125
+   },
+   "pe": {
+    "k": {
+     "mean": -1.071479600584571,
+     "median": -0.8960998536357275,
+     "lo": -4.154972930473032,
+     "hi": -0.05794077110516998,
+     "p_pos": 0.01975,
+     "p_neg": 0.98025
+    },
+    "delta": {
+     "mean": -1.4942257511678316,
+     "median": -1.249650927735553,
+     "lo": -5.794293745518716,
+     "hi": -0.08080097108767363,
+     "p_pos": 0.01975,
+     "p_neg": 0.98025
+    },
+    "ratio": {
+     "mean": 2.616045641879538e+292,
+     "median": 0.2866048251960597,
+     "lo": 0.0030448851095612145,
+     "hi": 0.9223772556751133,
+     "p_pos": 1.0,
+     "p_neg": 0.0
+    },
+    "slots": {
+     "mean": -3.1028610294350475e+167,
+     "median": -159.3039864428971,
+     "lo": -20954.92448995401,
+     "hi": -5.385926407793932,
+     "p_pos": 0.01975,
+     "p_neg": 0.98025
+    }
+   }
+  }
+ },
+ "decision": {
+  "M1": {
+   "category": "Opposite",
+   "lo": -0.2991471569594157,
+   "hi": -0.005056092030377093,
+   "basis": "bayes"
+  },
+  "M2": {
+   "category": "Inconclusive",
+   "lo": -0.2730849127762399,
+   "hi": 0.0254943655410809,
+   "basis": "bayes"
+  },
+  "M0": {
+   "category": "Inconclusive",
+   "lo": -0.18524104189506507,
+   "hi": 0.06989428476412504,
+   "basis": "bayes"
+  },
+  "M2-A": {
+   "category": "Opposite",
+   "lo": -0.2848819602458406,
+   "hi": -0.008699921321723765,
+   "basis": "bayes"
+  },
+  "M1-A": {
+   "category": "Opposite",
+   "lo": -0.2876621169248822,
+   "hi": -0.02151772424298112,
+   "basis": "bayes"
+  }
+ },
+ "glm_gap": {
+  "M1": {
+   "est": -0.1541560368677475,
+   "se": 0.06443151329308602,
+   "df": 68,
+   "n": 7214,
+   "ci_nom": [
+    -0.28272711984910964,
+    -0.025584953886385375
+   ],
+   "p_nom": 0.019499931839227137,
+   "se_kappa": 0.07731781595170323,
+   "ci_kappa": [
+    -0.3084413364453821,
+    0.00012926270988702915
+   ],
+   "p_kappa": 0.050186889872503276
+  },
+  "M2": {
+   "est": -0.13778986820095682,
+   "se": 0.07041254523625416,
+   "df": 68,
+   "n": 7214,
+   "ci_nom": [
+    -0.27829591460280045,
+    0.002716178200886793
+   ],
+   "p_nom": 0.054467178815395964,
+   "se_kappa": 0.084495054283505,
+   "ci_kappa": [
+    -0.30639712388316914,
+    0.03081738748125551
+   ],
+   "p_kappa": 0.10756772778063732
+  },
+  "M0": {
+   "est": -0.05367470311078275,
+   "se": 0.04403596414638339,
+   "df": 68,
+   "n": 7214,
+   "ci_nom": [
+    -0.1415471014304493,
+    0.03419769520888381
+   ],
+   "p_nom": 0.22710004292346064,
+   "se_kappa": 0.05284315697566006,
+   "ci_kappa": [
+    -0.15912158109438262,
+    0.051772174872817114
+   ],
+   "p_kappa": 0.31335554943728633
+  },
+  "M2-A": {
+   "est": -0.14391127510666274,
+   "se": 0.07469618056641635,
+   "df": 74,
+   "n": 7720,
+   "ci_nom": [
+    -0.29274666380913594,
+    0.004924113595810464
+   ],
+   "p_nom": 0.057866935354124016,
+   "se_kappa": 0.08963541667969961,
+   "ci_kappa": [
+    -0.3225137415496306,
+    0.034691191336305105
+   ],
+   "p_kappa": 0.11263925485746795
+  },
+  "M1-A": {
+   "est": -0.14316962970091085,
+   "se": 0.06889550847642537,
+   "df": 74,
+   "n": 7720,
+   "ci_nom": [
+    -0.28044692696279494,
+    -0.005892332439026732
+   ],
+   "p_nom": 0.041171598163925335,
+   "se_kappa": 0.08267461017171043,
+   "ci_kappa": [
+    -0.30790238641517176,
+    0.02156312701335006
+   ],
+   "p_kappa": 0.08748960777721948
+  }
+ },
+ "conv": {
+  "M1": {
+   "rhat_max": 1.007763122902893,
+   "ess_bulk_min": 13420.440811318298,
+   "ess_tail_min": 5177.97509564549,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 99.9541289806366,
+   "fallback": false,
+   "not_converged": false,
+   "light": false
+  },
+  "M2": {
+   "rhat_max": 1.005369248722815,
+   "ess_bulk_min": 12198.896153641303,
+   "ess_tail_min": 5946.749806933518,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 102.67728400230408,
+   "fallback": false,
+   "not_converged": false,
+   "light": false
+  },
+  "M0": {
+   "rhat_max": 1.0028095268738664,
+   "ess_bulk_min": 11132.736435189043,
+   "ess_tail_min": 5980.827632561812,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 78.52161622047424,
+   "fallback": false,
+   "not_converged": false,
+   "light": false
+  },
+  "M2-A": {
+   "rhat_max": 1.008920199805296,
+   "ess_bulk_min": 8322.773328254076,
+   "ess_tail_min": 5354.962966596182,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 49.1403386592865,
+   "fallback": false,
+   "not_converged": false,
+   "light": false
+  },
+  "M1-A": {
+   "rhat_max": 1.0043793841755273,
+   "ess_bulk_min": 8950.77003266904,
+   "ess_tail_min": 6225.351871556323,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 77.17055368423462,
+   "fallback": false,
+   "not_converged": false,
+   "light": false
+  },
+  "M1-S1": {
+   "rhat_max": 1.004568683675194,
+   "ess_bulk_min": 24621.66991869547,
+   "ess_tail_min": 11860.707197833157,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": true,
+   "first": {
+    "rhat_max": 1.033021807484215,
+    "ess_bulk_min": 8883.477027778628,
+    "ess_tail_min": 5183.187717208369,
+    "divergences": 0,
+    "div_pct": 0.0,
+    "ok": false,
+    "escalated": false,
+    "setting": "full"
+   },
+   "setting": "escalated",
+   "seconds": 319.71628642082214,
+   "fallback": false,
+   "not_converged": false
+  },
+  "M1-S2": {
+   "rhat_max": 1.0035564161838533,
+   "ess_bulk_min": 12082.930436891113,
+   "ess_tail_min": 5894.769115500109,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 103.30598068237305,
+   "fallback": false,
+   "not_converged": false
+  },
+  "M1-S3a": {
+   "rhat_max": 1.0029107303579978,
+   "ess_bulk_min": 14150.916924927944,
+   "ess_tail_min": 6279.524844435828,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 76.3619031906128,
+   "fallback": false,
+   "not_converged": false
+  },
+  "M1-S3b": {
+   "rhat_max": 1.005638962346476,
+   "ess_bulk_min": 12391.829350029557,
+   "ess_tail_min": 5993.127620931309,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 104.93767929077148,
+   "fallback": false,
+   "not_converged": false
+  },
+  "S5a": {
+   "rhat_max": 1.0035498647671097,
+   "ess_bulk_min": 9587.197541063173,
+   "ess_tail_min": 3246.6958782021534,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "light",
+   "seconds": 16.151548862457275,
+   "not_converged": false
+  },
+  "S5b": {
+   "rhat_max": 1.0098813122415509,
+   "ess_bulk_min": 5071.620778806877,
+   "ess_tail_min": 2918.4167746427865,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "light",
+   "seconds": 61.41037654876709,
+   "not_converged": false
+  },
+  "M1-PL": {
+   "rhat_max": 1.002517364640905,
+   "ess_bulk_min": 7576.9467569773615,
+   "ess_tail_min": 6166.0123078673305,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 171.76205682754517,
+   "fallback": false,
+   "not_converged": false
+  },
+  "M2-PL": {
+   "rhat_max": 1.0031009907180204,
+   "ess_bulk_min": 6328.692571446183,
+   "ess_tail_min": 5680.303687765184,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "full",
+   "seconds": 143.3924469947815,
+   "fallback": false,
+   "not_converged": false
+  },
+  "R": {
+   "rhat_max": 1.003787429271302,
+   "ess_bulk_min": 6194.184322602782,
+   "ess_tail_min": 2887.1590994874646,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "light",
+   "seconds": 56.14416742324829,
+   "not_converged": false
+  },
+  "M1-S2s": {
+   "rhat_max": 1.0074178346382867,
+   "ess_bulk_min": 4342.018724383892,
+   "ess_tail_min": 2725.533348478239,
+   "divergences": 0,
+   "div_pct": 0.0,
+   "ok": true,
+   "escalated": false,
+   "setting": "light",
+   "seconds": 74.82581734657288,
+   "not_converged": false
+  }
+ },
+ "sigma": {
+  "M1": {
+   "B": {
+    "mean": 0.2592901284882374,
+    "median": 0.2591809767009409,
+    "lo": 0.09401125663041057,
+    "hi": 0.42660015974061505,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   },
+   "R": {
+    "mean": 0.2812591719979315,
+    "median": 0.2832590076917474,
+    "lo": 0.04422023553744515,
+    "hi": 0.5011856982942646,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   }
+  },
+  "M2": {
+   "B": {
+    "mean": 0.2693950435014261,
+    "median": 0.2688938158297409,
+    "lo": 0.1017196688601092,
+    "hi": 0.4332840126880808,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   },
+   "R": {
+    "mean": 0.2708394628557819,
+    "median": 0.2745635443081875,
+    "lo": 0.028609511552427667,
+    "hi": 0.4794201935207903,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   }
+  },
+  "M0": {
+   "B": {
+    "mean": 0.20814604555811628,
+    "median": 0.21106152325623356,
+    "lo": 0.032130616276577526,
+    "hi": 0.3649708405625924,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   },
+   "R": {
+    "mean": 0.3215124146506238,
+    "median": 0.318781708879622,
+    "lo": 0.15204785786884256,
+    "hi": 0.5012919981075539,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   }
+  },
+  "R": {
+   "B": {
+    "mean": 0.2222606034618634,
+    "median": 0.2231925826321287,
+    "lo": 0.06441172191483213,
+    "hi": 0.3679763434955958,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   },
+   "R": {
+    "mean": 0.29063303276160535,
+    "median": 0.28969799959944775,
+    "lo": 0.13112941582684465,
+    "hi": 0.45239883225248,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   }
+  }
+ },
+ "h1_provisional": {
+  "category": "Opposite",
+  "basis": "bayes",
+  "lo": -0.2991471569594157,
+  "hi": -0.005056092030377093
+ },
+ "s3a_meta": {
+  "n_set": 7214,
+  "dropped_ctx": 0,
+  "dropped_y_null": 114,
+  "dropped_x_null": 0,
+  "n": 7100,
+  "ver": "reg",
+  "set": "P",
+  "family": "gaussian",
+  "outcome": "peak",
+  "ybar": 0.2893562206867295,
+  "ysd": 0.2457283354827684,
+  "blockers": 69,
+  "rushers": 97,
+  "light": false,
+  "idata_path": "C:\\Users\\jm_pa\\Documents\\GitHub\\Big data bowl 2027\\data\\processed\\confirmatory\\idata_M1-S3a.nc",
+  "seconds": 85.85612726211548,
+  "null_count": 114
+ },
+ "s3b_meta": {
+  "n_set": 7214,
+  "dropped_ctx": 0,
+  "dropped_y_null": 0,
+  "dropped_x_null": 0,
+  "n": 7214,
+  "ver": "reg",
+  "set": "P",
+  "family": "binomial",
+  "outcome": "rp",
+  "blockers": 69,
+  "rushers": 97,
+  "light": false,
+  "idata_path": "C:\\Users\\jm_pa\\Documents\\GitHub\\Big data bowl 2027\\data\\processed\\confirmatory\\idata_M1-S3b.nc",
+  "seconds": 105.40028810501099,
+  "events": 688
+ },
+ "s5": {
+  "share": 0.010901386850877381,
+  "dropped_null_depth": 0
+ },
+ "secondaries": [
+  {
+   "ID": "H2",
+   "Model": "M2",
+   "Estimand": "gap",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.12503626730168108,
+    "median": -0.12482921661395241,
+    "lo": -0.2730849127762399,
+    "hi": 0.0254943655410809,
+    "p_pos": 0.048875,
+    "p_neg": 0.951125
+   },
+   "glm": {
+    "est": -0.13778986820095682,
+    "se": 0.07041254523625416,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.27829591460280045,
+     0.002716178200886793
+    ],
+    "p_nom": 0.054467178815395964,
+    "se_kappa": 0.084495054283505,
+    "ci_kappa": [
+     -0.30639712388316914,
+     0.03081738748125551
+    ],
+    "p_kappa": 0.10756772778063732
+   },
+   "n": 7214,
+   "Category": "Inconclusive"
+  },
+  {
+   "ID": "M0",
+   "Model": "M0",
+   "Estimand": "gap",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.05847741002570905,
+    "median": -0.05904062550703218,
+    "lo": -0.18524104189506507,
+    "hi": 0.06989428476412504,
+    "p_pos": 0.183875,
+    "p_neg": 0.816125
+   },
+   "glm": {
+    "est": -0.05367470311078275,
+    "se": 0.04403596414638339,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.1415471014304493,
+     0.03419769520888381
+    ],
+    "p_nom": 0.22710004292346064,
+    "se_kappa": 0.05284315697566006,
+    "ci_kappa": [
+     -0.15912158109438262,
+     0.051772174872817114
+    ],
+    "p_kappa": 0.31335554943728633
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S0",
+   "Model": "M1-A",
+   "Estimand": "gap",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.15343639120576852,
+    "median": -0.15371826664942698,
+    "lo": -0.2876621169248822,
+    "hi": -0.02151772424298112,
+    "p_pos": 0.011875,
+    "p_neg": 0.988125
+   },
+   "glm": {
+    "est": -0.14316962970091085,
+    "se": 0.06889550847642537,
+    "df": 74,
+    "n": 7720,
+    "ci_nom": [
+     -0.28044692696279494,
+     -0.005892332439026732
+    ],
+    "p_nom": 0.041171598163925335,
+    "se_kappa": 0.08267461017171043,
+    "ci_kappa": [
+     -0.30790238641517176,
+     0.02156312701335006
+    ],
+    "p_kappa": 0.08748960777721948
+   },
+   "n": 7720,
+   "Category": "Opposite"
+  },
+  {
+   "ID": "S0",
+   "Model": "M2-A",
+   "Estimand": "gap",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.1483444947836443,
+    "median": -0.1490101075415155,
+    "lo": -0.2848819602458406,
+    "hi": -0.008699921321723765,
+    "p_pos": 0.01875,
+    "p_neg": 0.98125
+   },
+   "glm": {
+    "est": -0.14391127510666274,
+    "se": 0.07469618056641635,
+    "df": 74,
+    "n": 7720,
+    "ci_nom": [
+     -0.29274666380913594,
+     0.004924113595810464
+    ],
+    "p_nom": 0.057866935354124016,
+    "se_kappa": 0.08963541667969961,
+    "ci_kappa": [
+     -0.3225137415496306,
+     0.034691191336305105
+    ],
+    "p_kappa": 0.11263925485746795
+   },
+   "n": 7720,
+   "Category": "Opposite"
+  },
+  {
+   "ID": "S1",
+   "Model": "M1-S1",
+   "Estimand": "c_R",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.03157975789279669,
+    "median": -0.0329505173165827,
+    "lo": -0.2092803547008869,
+    "hi": 0.1597609411148008,
+    "p_pos": 0.3614375,
+    "p_neg": 0.6385625
+   },
+   "glm": {
+    "est": -0.06388888425551995,
+    "se": 0.08186055707248686,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.22723908260320702,
+     0.09946131409216713
+    ],
+    "p_nom": 0.4378286167315794,
+    "se_kappa": 0.09823266848698424,
+    "ci_kappa": [
+     -0.25990912227274443,
+     0.13213135376170457
+    ],
+    "p_kappa": 0.5176361339460026
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S1",
+   "Model": "M1-S1",
+   "Estimand": "c_B",
+   "Expected": "-",
+   "bayes": {
+    "mean": 0.15690298421184548,
+    "median": 0.15568906341479002,
+    "lo": 0.020490785178859786,
+    "hi": 0.3012478720626373,
+    "p_pos": 0.9876875,
+    "p_neg": 0.0123125
+   },
+   "glm": {
+    "est": 0.14275588835750527,
+    "se": 0.06154897939017511,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     0.019936812223195086,
+     0.26557496449181545
+    ],
+    "p_nom": 0.023385042012021743,
+    "se_kappa": 0.07385877526821014,
+    "ci_kappa": [
+     -0.004627003003666946,
+     0.2901387797186775
+    ],
+    "p_kappa": 0.057423795462980654
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S1",
+   "Model": "M1-S1",
+   "Estimand": "c_R + c_B",
+   "Expected": "none",
+   "bayes": {
+    "mean": 0.12532322631904882,
+    "median": 0.12338536613534024,
+    "lo": -0.10058001079743147,
+    "hi": 0.363396726352197,
+    "p_pos": 0.8631875,
+    "p_neg": 0.1368125
+   },
+   "glm": {
+    "est": 0.07886700410198533,
+    "se": 0.10517749226424045,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.1310114139970092,
+     0.2887454222009799
+    ],
+    "p_nom": 0.45593352347604077,
+    "se_kappa": 0.12621299071708852,
+    "ci_kappa": [
+     -0.17298709761680808,
+     0.33072110582077874
+    ],
+    "p_kappa": 0.5341461050007286
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S2",
+   "Model": "M1-S2",
+   "Estimand": "gap x edge",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.051554005429376715,
+    "median": -0.05188341646934952,
+    "lo": -0.2554256958666375,
+    "hi": 0.14646624904809885,
+    "p_pos": 0.31675,
+    "p_neg": 0.68325
+   },
+   "glm": {
+    "est": 0.014935025571984452,
+    "se": 0.12788789455704427,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.24026129472257318,
+     0.2701313458665421
+    ],
+    "p_nom": 0.9073769045056902,
+    "se_kappa": 0.15346547346845313,
+    "ci_kappa": [
+     -0.2913005587814847,
+     0.3211706099254536
+    ],
+    "p_kappa": 0.9227597620851262
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S2",
+   "Model": "M1-S2",
+   "Estimand": "gap (interior)",
+   "Expected": ">=0",
+   "bayes": {
+    "mean": -0.1222892198527863,
+    "median": -0.12316081325029311,
+    "lo": -0.30413066959172214,
+    "hi": 0.06563258246913506,
+    "p_pos": 0.103375,
+    "p_neg": 0.896625
+   },
+   "glm": {
+    "est": -0.16282060579308494,
+    "se": 0.09231815694406634,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.3470386197818336,
+     0.021397408195663714
+    ],
+    "p_nom": 0.08227613362546031,
+    "se_kappa": 0.1107817883328796,
+    "ci_kappa": [
+     -0.38388222257958327,
+     0.05824101099341342
+    ],
+    "p_kappa": 0.14624351696269128
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S2",
+   "Model": "M1-S2",
+   "Estimand": "gap (edge)",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.173843225282163,
+    "median": -0.17302805226426615,
+    "lo": -0.3503128040539675,
+    "hi": -0.0016208910715329364,
+    "p_pos": 0.024,
+    "p_neg": 0.976
+   },
+   "glm": {
+    "est": -0.1478855802211005,
+    "se": 0.09062428488034206,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.3287235251328704,
+     0.03295236469066942
+    ],
+    "p_nom": 0.10733325287568413,
+    "se_kappa": 0.10874914185641048,
+    "ci_kappa": [
+     -0.36489111411522435,
+     0.0691199536730234
+    ],
+    "p_kappa": 0.17836032960547868
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S3a",
+   "Model": "M1-S3a",
+   "Estimand": "gap, pp of peak pressure probability",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.8458822056425015,
+    "median": -0.8505687811352802,
+    "lo": -1.792708599241846,
+    "hi": 0.09530668777677016,
+    "p_pos": 0.04,
+    "p_neg": 0.96
+   },
+   "glm": {
+    "est": -0.797284770003146,
+    "se": 0.3991672154922898,
+    "df": 68,
+    "n": 7100,
+    "ci_nom": [
+     -1.5938105469633719,
+     -0.0007589930429203684
+    ],
+    "p_nom": 0.04978816836128831,
+    "se_kappa": 0.4790006585907478,
+    "ci_kappa": [
+     -1.753115702355417,
+     0.15854616234912466
+    ],
+    "p_kappa": 0.10061922427921298
+   },
+   "n": 7100,
+   "Category": ""
+  },
+  {
+   "ID": "S3b",
+   "Model": "M1-S3b",
+   "Estimand": "gap",
+   "Expected": "+",
+   "bayes": {
+    "mean": -0.13594800514196362,
+    "median": -0.13517396663134068,
+    "lo": -0.2744035203219869,
+    "hi": -0.0007806717483057739,
+    "p_pos": 0.024625,
+    "p_neg": 0.975375
+   },
+   "glm": {
+    "est": -0.127334146642778,
+    "se": 0.07025054743991076,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.2675169314750583,
+     0.012848638189502243
+    ],
+    "p_nom": 0.07431227919581834,
+    "se_kappa": 0.0843006569278929,
+    "ci_kappa": [
+     -0.2955534884415143,
+     0.04088519515595829
+    ],
+    "p_kappa": 0.13555510726611103
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S5",
+   "Model": "S5a",
+   "Estimand": "beta_depth",
+   "Expected": "+",
+   "bayes": {
+    "mean": 0.322139174382278,
+    "median": 0.321598348975241,
+    "lo": 0.20573117979776134,
+    "hi": 0.441021864780151,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   },
+   "glm": {
+    "est": 0.3136324929453847,
+    "se": 0.07280605017128848,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     0.1683502818084561,
+     0.4589147040823133
+    ],
+    "p_nom": 5.434160095337786e-05,
+    "se_kappa": 0.08736726020554618,
+    "ci_kappa": [
+     0.1392938395810704,
+     0.487971146309699
+    ],
+    "p_kappa": 0.0006197453836259871
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S5",
+   "Model": "S5b",
+   "Estimand": "beta_depth",
+   "Expected": "none",
+   "bayes": {
+    "mean": 0.31768270160936835,
+    "median": 0.3180924809624584,
+    "lo": 0.19310141739401895,
+    "hi": 0.4353653210500431,
+    "p_pos": 1.0,
+    "p_neg": 0.0
+   },
+   "glm": {
+    "est": 0.3080812033973863,
+    "se": 0.0743023072654285,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     0.15981325771566982,
+     0.45634914907910284
+    ],
+    "p_nom": 9.583667359051351e-05,
+    "se_kappa": 0.0891627687185142,
+    "ci_kappa": [
+     0.1301596685793265,
+     0.48600273821544615
+    ],
+    "p_kappa": 0.0009514080906345623
+   },
+   "n": 7214,
+   "Category": ""
+  },
+  {
+   "ID": "S5",
+   "Model": "S5a/S5b",
+   "Estimand": "share = 1 - med(S5b)/med(S5a)",
+   "Expected": "+",
+   "bayes": {
+    "point": 0.010901386850877381
+   },
+   "glm": null,
+   "n": 7214,
+   "Category": ""
+  }
+ ],
+ "engine_check": {
+  "max_abs_beta_diff": 3.6554623422140438,
+  "se_gap_diff": 0.00019094656882796823
+ },
+ "perm": {
+  "nperm": 2000,
+  "beta_obs": -0.1541560368677475,
+  "t_obs": -2.392556514488844,
+  "p_two": 0.037481259370314844,
+  "p_one": 0.9770114942528736,
+  "p_coef": 0.05347326336831584,
+  "null_mean": -0.013648404250813342,
+  "null_sd": 0.08189746602852101,
+  "null_lo": -0.164074572530475,
+  "null_hi": 0.14466176514650642,
+  "tnull_mean": -0.19232011235273938,
+  "tnull_sd": 1.1477529647492468,
+  "seconds": 133.2669746875763
+ },
+ "placebo": {
+  "n_PL": 17791,
+  "bayes_gap_PL": {
+   "mean": -0.04195869210164347,
+   "median": -0.04194417864442221,
+   "lo": -0.1564252320105786,
+   "hi": 0.07085931854701497,
+   "p_pos": 0.23725,
+   "p_neg": 0.76275
+  },
+  "glm_gap_PL": {
+   "est": -0.05098285283055476,
+   "se": 0.05328392006818776,
+   "df": 72,
+   "n": 17791,
+   "ci_nom": [
+    -0.15720240617541043,
+    0.05523670051430091
+   ],
+   "p_nom": 0.3418624254604602,
+   "se_kappa": 0.06394070408182531,
+   "ci_kappa": [
+    -0.17844631684438156,
+    0.07648061118327204
+   ],
+   "p_kappa": 0.427871938268146
+  },
+  "ratio_gap": 0.2749951022493883,
+  "beta_lpd_PL": {
+   "mean": -0.08106042551063268,
+   "median": -0.08035352953429155,
+   "lo": -0.1794990438908524,
+   "hi": 0.015768670582054417,
+   "p_pos": 0.04875,
+   "p_neg": 0.95125
+  },
+  "ratio_pick": 0.4793750946486934,
+  "glm_lpd_PL": {
+   "est": -0.07531021704458747,
+   "se": 0.04428073816005459,
+   "df": 72,
+   "n": 17791,
+   "ci_nom": [
+    -0.16358225527155035,
+    0.012961821182375405
+   ],
+   "p_nom": 0.0933066627566741,
+   "se_kappa": 0.053136885792065505,
+   "ci_kappa": [
+    -0.1812366629169429,
+    0.030616228827767974
+   ],
+   "p_kappa": 0.16071196050293526
+  }
+ },
+ "cv": {
+  "sets": {
+   "I0": {
+    "ll": 0.2781361660734297,
+    "brier": 0.07756136337685951,
+    "n_cols": 21
+   },
+   "I1": {
+    "ll": 0.2828023250222379,
+    "brier": 0.07820350200028664,
+    "n_cols": 28
+   },
+   "I2": {
+    "ll": 0.2929954525667916,
+    "brier": 0.08067988471067032,
+    "n_cols": 44
+   },
+   "I3": {
+    "ll": 0.28353593629559365,
+    "brier": 0.0782913258096131,
+    "n_cols": 30
+   },
+   "I4": {
+    "ll": 0.2950887514264779,
+    "brier": 0.08115930325137857,
+    "n_cols": 46
+   }
+  },
+  "d42": {
+   "mean": 2.093298859686257,
+   "lo": -0.8292680195563826,
+   "hi": 5.652401435853894,
+   "share_neg": 0.1
+  },
+  "d31": {
+   "mean": 0.7336112733557887,
+   "lo": -0.776889011689126,
+   "hi": 2.5517739672544346,
+   "share_neg": 0.2
+  },
+  "d21": {
+   "mean": 10.193127544553786,
+   "lo": 6.34657618155544,
+   "hi": 15.72619012623514,
+   "share_neg": 0.0
+  },
+  "reps": 20,
+  "n": 7214,
+  "seconds": 23.720280170440674
+ },
+ "v8": {
+  "loco": [
+   {
+    "unit": "class 2023",
+    "n_test": 4990,
+    "n_train": 2224,
+    "LL_I2": 0.30220187466406406,
+    "LL_I4": 0.31033278332104086,
+    "dLL_millinats": 8.130908656976798
+   },
+   {
+    "unit": "class 2024",
+    "n_test": 4084,
+    "n_train": 3130,
+    "LL_I2": 0.29180594649767044,
+    "LL_I4": 0.2974500278160427,
+    "dLL_millinats": 5.6440813183722405
+   },
+   {
+    "unit": "class 2025",
+    "n_test": 2419,
+    "n_train": 4795,
+    "LL_I2": 0.26056908216299346,
+    "LL_I4": 0.2615992319327067,
+    "dLL_millinats": 1.0301497697132178
+   }
+  ],
+  "loso": [
+   {
+    "unit": "season 2023",
+    "n_test": 431,
+    "n_train": 6783,
+    "LL_I2": 0.310924949688406,
+    "LL_I4": 0.3117577657144114,
+    "dLL_millinats": 0.8328160260053785
+   },
+   {
+    "unit": "season 2024",
+    "n_test": 1821,
+    "n_train": 5393,
+    "LL_I2": 0.2845868263626082,
+    "LL_I4": 0.2836253142399415,
+    "dLL_millinats": -0.9615121226667078
+   },
+   {
+    "unit": "season 2025",
+    "n_test": 4962,
+    "n_train": 2252,
+    "LL_I2": 0.2747668112767744,
+    "LL_I4": 0.27562636182472705,
+    "dLL_millinats": 0.8595505479526699
+   }
+  ],
+  "by_season": [
+   {
+    "season": 2023,
+    "n": 431,
+    "est": -0.16359992735470555,
+    "ci_kappa": [
+     -1.4949040295886902,
+     1.1677041748792791
+    ],
+    "ci_nom": [
+     -1.2730200125496927,
+     0.9458201578402816
+    ],
+    "flag": "imprecise (431 reps)"
+   },
+   {
+    "season": 2024,
+    "n": 1821,
+    "est": -0.2793937000020139,
+    "ci_kappa": [
+     -0.6061195922402693,
+     0.04733219223624158
+    ],
+    "ci_nom": [
+     -0.5516652768672268,
+     -0.007122123136800995
+    ],
+    "flag": ""
+   },
+   {
+    "season": 2025,
+    "n": 4962,
+    "est": -0.10088672497908556,
+    "ci_kappa": [
+     -0.2519534229638964,
+     0.050179973005725284
+    ],
+    "ci_nom": [
+     -0.22677563996642797,
+     0.025002190008256833
+    ],
+    "flag": ""
+   }
+  ]
+ },
+ "selection": {
+  "sc1": [
+   {
+    "side": "OL",
+    "var": "composite",
+    "n_in": 69,
+    "n_out": 36,
+    "diff": 0.2851338424149119,
+    "lo": -0.12883362452445082,
+    "hi": 0.7429060431907557,
+    "ks_p": 0.24312743996777902
+   },
+   {
+    "side": "OL",
+    "var": "log_pick",
+    "n_in": 69,
+    "n_out": 36,
+    "diff": -1.198599533712187,
+    "lo": -1.4625739888740001,
+    "hi": -0.9670660778436174,
+    "ks_p": 4.1342157397375416e-14
+   },
+   {
+    "side": "OL",
+    "var": "ngs_athleticism_score",
+    "n_in": 69,
+    "n_out": 36,
+    "diff": 6.8272946859903385,
+    "lo": 2.9331219806763276,
+    "hi": 10.674064009661839,
+    "ks_p": 0.019569164324734215
+   },
+   {
+    "side": "DL",
+    "var": "composite",
+    "n_in": 97,
+    "n_out": 21,
+    "diff": 0.1284053229582044,
+    "lo": -0.38936673892567014,
+    "hi": 0.6509831341667118,
+    "ks_p": 0.9044756086207306
+   },
+   {
+    "side": "DL",
+    "var": "log_pick",
+    "n_in": 97,
+    "n_out": 21,
+    "diff": -0.7569500520508345,
+    "lo": -0.9740765772671119,
+    "hi": -0.5508194868845409,
+    "ks_p": 2.7853598929890446e-06
+   },
+   {
+    "side": "DL",
+    "var": "ngs_athleticism_score",
+    "n_in": 97,
+    "n_out": 21,
+    "diff": 7.292587137947962,
+    "lo": 3.122557682866954,
+    "hi": 11.66000245459008,
+    "ks_p": 0.014919179451448359
+   }
+  ],
+  "sc1_excluded": {
+   "n_excluded": 10,
+   "n_reps": 873,
+   "log_pick": [
+    3.7038347277221133,
+    4.272307472819767
+   ],
+   "ngs": [
+    78.2,
+    77.85507246376811
+   ],
+   "miss_forty": [
+    40.0,
+    17.391304347826086
+   ]
+  },
+  "sc2": {
+   "glm": {
+    "est": -0.03449767695678428,
+    "se": 0.032954078618619806,
+    "df": 74,
+    "n": 25005,
+    "ci_nom": [
+     -0.1001601119479962,
+     0.031164758034427642
+    ],
+    "p_nom": 0.29858029125213265,
+    "se_kappa": 0.03954489434234377,
+    "ci_kappa": [
+     -0.11329259894623858,
+     0.04429724503267002
+    ],
+    "p_kappa": 0.3858297820657398
+   },
+   "flagged": false,
+   "n": 25005
+  },
+  "sc3a": {
+   "gap": {
+    "est": -0.08028493347065137,
+    "se": 0.049949127515207865,
+    "df": 74,
+    "n": 25005,
+    "ci_nom": [
+     -0.17981074259104168,
+     0.01924087564973896
+    ],
+    "p_nom": 0.11223992171819967,
+    "se_kappa": 0.05993895301824943,
+    "ci_kappa": [
+     -0.19971590441511977,
+     0.03914603747381702
+    ],
+    "p_kappa": 0.18452523164079923
+   },
+   "eng": {
+    "est": 0.0014245707784858244,
+    "se": 0.04756881209490196,
+    "df": 74,
+    "n": 25005,
+    "ci_nom": [
+     -0.09335835633469511,
+     0.09620749789166677
+    ],
+    "p_nom": 0.976189482706545,
+    "se_kappa": 0.05708257451388235,
+    "ci_kappa": [
+     -0.11231494175733128,
+     0.11516408331430295
+    ],
+    "p_kappa": 0.9801569838334202
+   },
+   "n": 25005
+  },
+  "sc3b": {
+   "gap": {
+    "est": -0.084324541151348,
+    "se": 0.05148407908845101,
+    "df": 74,
+    "n": 25005,
+    "ci_nom": [
+     -0.18690880804442173,
+     0.0182597257417257
+    ],
+    "p_nom": 0.10569316408663285,
+    "se_kappa": 0.061780894906141214,
+    "ci_kappa": [
+     -0.20742566142303645,
+     0.03877657912034044
+    ],
+    "p_kappa": 0.176421218458619
+   },
+   "eng": {
+    "est": 0.0006911971301401042,
+    "se": 0.04805071587671026,
+    "df": 74,
+    "n": 25005,
+    "ci_nom": [
+     -0.09505194422878606,
+     0.09643433848906625
+    ],
+    "p_nom": 0.9885617448660718,
+    "se_kappa": 0.05766085905205231,
+    "ci_kappa": [
+     -0.11420057250057128,
+     0.11558296676085147
+    ],
+    "p_kappa": 0.9904680189229517
+   },
+   "inter": {
+    "est": 0.012878130953358841,
+    "se": 0.046382023183130804,
+    "df": 74,
+    "n": 25005,
+    "ci_nom": [
+     -0.07954006763351962,
+     0.1052963295402373
+    ],
+    "p_nom": 0.7820525979102865,
+    "se_kappa": 0.05565842781975696,
+    "ci_kappa": [
+     -0.0980237073508953,
+     0.12377996925761298
+    ],
+    "p_kappa": 0.8176598065772275
+   },
+   "n": 25005
+  },
+  "sc4": {
+   "glm": {
+    "est": -0.1782125438630173,
+    "se": 0.07241385194836465,
+    "df": 68,
+    "n": 7214,
+    "ci_nom": [
+     -0.32271213563113943,
+     -0.03371295209489519
+    ],
+    "p_nom": 0.016397415577967575,
+    "se_kappa": 0.08689662233803758,
+    "ci_kappa": [
+     -0.3516120539847638,
+     -0.004813033741270789
+    ],
+    "p_kappa": 0.04413690498834192
+   },
+   "n": 7214,
+   "w_min": 0.7437563984331541,
+   "w_max": 14.486795355416989
+  }
+ },
+ "ratings": [
+  {
+   "nfl_id": 55874,
+   "side": "blocker",
+   "reps": 244,
+   "rating_mean": 0.12796751409015322,
+   "rating_sd": 0.1695884217841184,
+   "q05": -0.13528073469987648,
+   "q95": 0.4261536235196651
+  },
+  {
+   "nfl_id": 55924,
+   "side": "blocker",
+   "reps": 192,
+   "rating_mean": 0.4135659110766157,
+   "rating_sd": 0.24621142331149815,
+   "q05": 0.036070614331000936,
+   "q95": 0.8532606892981452
+  },
+  {
+   "nfl_id": 55903,
+   "side": "blocker",
+   "reps": 204,
+   "rating_mean": -0.09809955475437517,
+   "rating_sd": 0.1669954992453972,
+   "q05": -0.3919415683558663,
+   "q95": 0.16270120081201297
+  },
+  {
+   "nfl_id": 55913,
+   "side": "blocker",
+   "reps": 75,
+   "rating_mean": -0.0011656913688943811,
+   "rating_sd": 0.1939589766460519,
+   "q05": -0.32059426173226,
+   "q95": 0.32630717879434185
+  },
+  {
+   "nfl_id": 55922,
+   "side": "blocker",
+   "reps": 114,
+   "rating_mean": 0.031357014984489284,
+   "rating_sd": 0.19898270218111277,
+   "q05": -0.2915019448233685,
+   "q95": 0.3631393646617543
+  },
+  {
+   "nfl_id": 55976,
+   "side": "blocker",
+   "reps": 46,
+   "rating_mean": -0.025454319278713538,
+   "rating_sd": 0.21047904671053158,
+   "q05": -0.36915090672594664,
+   "q95": 0.3178149007462897
+  },
+  {
+   "nfl_id": 55891,
+   "side": "blocker",
+   "reps": 255,
+   "rating_mean": 0.21563620735129949,
+   "rating_sd": 0.18035705354757794,
+   "q05": -0.04666038340002589,
+   "q95": 0.537954294090552
+  },
+  {
+   "nfl_id": 56066,
+   "side": "blocker",
+   "reps": 131,
+   "rating_mean": 0.13629881067050326,
+   "rating_sd": 0.2006021385284802,
+   "q05": -0.16589036168679852,
+   "q95": 0.4994206085413303
+  },
+  {
+   "nfl_id": 56450,
+   "side": "blocker",
+   "reps": 53,
+   "rating_mean": 0.00298162905608483,
+   "rating_sd": 0.21410716748333558,
+   "q05": -0.3552429000854687,
+   "q95": 0.36921779272919725
+  },
+  {
+   "nfl_id": 55878,
+   "side": "blocker",
+   "reps": 188,
+   "rating_mean": -0.13143343511233468,
+   "rating_sd": 0.1735081867016298,
+   "q05": -0.43100833417642265,
+   "q95": 0.1368189854962025
+  },
+  {
+   "nfl_id": 55901,
+   "side": "blocker",
+   "reps": 244,
+   "rating_mean": 0.02777682334428348,
+   "rating_sd": 0.17029317116532935,
+   "q05": -0.2478315175018895,
+   "q95": 0.30493307489083676
+  },
+  {
+   "nfl_id": 55971,
+   "side": "blocker",
+   "reps": 16,
+   "rating_mean": -0.04189369941239854,
+   "rating_sd": 0.2266906286107964,
+   "q05": -0.4290976347664218,
+   "q95": 0.31363574109103437
+  },
+  {
+   "nfl_id": 56034,
+   "side": "blocker",
+   "reps": 58,
+   "rating_mean": -0.04115288245793397,
+   "rating_sd": 0.2132621083474348,
+   "q05": -0.3967694653161908,
+   "q95": 0.2954197728672899
+  },
+  {
+   "nfl_id": 55968,
+   "side": "blocker",
+   "reps": 27,
+   "rating_mean": -0.048986152985485094,
+   "rating_sd": 0.21378365532493,
+   "q05": -0.4115804232289488,
+   "q95": 0.2976814395065223
+  },
+  {
+   "nfl_id": 55870,
+   "side": "blocker",
+   "reps": 289,
+   "rating_mean": -0.057519583920875535,
+   "rating_sd": 0.1509604214660099,
+   "q05": -0.3149652469617186,
+   "q95": 0.18009791447769277
+  },
+  {
+   "nfl_id": 55973,
+   "side": "blocker",
+   "reps": 264,
+   "rating_mean": -0.1425277933291473,
+   "rating_sd": 0.16344477613345237,
+   "q05": -0.42426285885740134,
+   "q95": 0.11122095987139068
+  },
+  {
+   "nfl_id": 55875,
+   "side": "blocker",
+   "reps": 285,
+   "rating_mean": 0.0399602790406716,
+   "rating_sd": 0.1567725644275834,
+   "q05": -0.21157789694529733,
+   "q95": 0.3076498697821667
+  },
+  {
+   "nfl_id": 55982,
+   "side": "blocker",
+   "reps": 25,
+   "rating_mean": 0.023357987669783555,
+   "rating_sd": 0.21730445279216112,
+   "q05": -0.33179186931029214,
+   "q95": 0.38962167085690835
+  },
+  {
+   "nfl_id": 55927,
+   "side": "blocker",
+   "reps": 163,
+   "rating_mean": 0.02825087961863917,
+   "rating_sd": 0.1884229227492638,
+   "q05": -0.2773718769756086,
+   "q95": 0.3498645750963542
+  },
+  {
+   "nfl_id": 56055,
+   "side": "blocker",
+   "reps": 54,
+   "rating_mean": -0.055099680979380776,
+   "rating_sd": 0.21482581201839013,
+   "q05": -0.41775616915194286,
+   "q95": 0.2923448279469118
+  },
+  {
+   "nfl_id": 57184,
+   "side": "blocker",
+   "reps": 107,
+   "rating_mean": 0.053189486356073463,
+   "rating_sd": 0.19026028925909783,
+   "q05": -0.25407103896073313,
+   "q95": 0.3787403909497315
+  },
+  {
+   "nfl_id": 57128,
+   "side": "blocker",
+   "reps": 192,
+   "rating_mean": 0.12226039972260176,
+   "rating_sd": 0.1819436848163185,
+   "q05": -0.15072655063429752,
+   "q95": 0.4376051905324753
+  },
+  {
+   "nfl_id": 57126,
+   "side": "blocker",
+   "reps": 75,
+   "rating_mean": 0.06681667986154656,
+   "rating_sd": 0.19962132724177925,
+   "q05": -0.2532227111566366,
+   "q95": 0.40938378849560847
+  },
+  {
+   "nfl_id": 57207,
+   "side": "blocker",
+   "reps": 315,
+   "rating_mean": 0.04074340923147474,
+   "rating_sd": 0.1554646502319552,
+   "q05": -0.2106919259984011,
+   "q95": 0.30754163890590536
+  },
+  {
+   "nfl_id": 57135,
+   "side": "blocker",
+   "reps": 194,
+   "rating_mean": -0.1266718078380846,
+   "rating_sd": 0.1689240307275501,
+   "q05": -0.4149103735899993,
+   "q95": 0.1326864899199201
+  },
+  {
+   "nfl_id": 57150,
+   "side": "blocker",
+   "reps": 89,
+   "rating_mean": 0.075129753739957,
+   "rating_sd": 0.19896313082863454,
+   "q05": -0.23007192832423476,
+   "q95": 0.4296520410664179
+  },
+  {
+   "nfl_id": 57224,
+   "side": "blocker",
+   "reps": 77,
+   "rating_mean": -0.1337332631861438,
+   "rating_sd": 0.19349653464011551,
+   "q05": -0.47276751936798245,
+   "q95": 0.16843583920513425
+  },
+  {
+   "nfl_id": 57202,
+   "side": "blocker",
+   "reps": 18,
+   "rating_mean": 0.07721791614703928,
+   "rating_sd": 0.23153313239547876,
+   "q05": -0.2838798392367606,
+   "q95": 0.4782186479888401
+  },
+  {
+   "nfl_id": 57189,
+   "side": "blocker",
+   "reps": 9,
+   "rating_mean": 0.04776478241377203,
+   "rating_sd": 0.23442241179701095,
+   "q05": -0.33379415600685036,
+   "q95": 0.4392819693254732
+  },
+  {
+   "nfl_id": 57172,
+   "side": "blocker",
+   "reps": 125,
+   "rating_mean": 0.012856921428297379,
+   "rating_sd": 0.20062346502981257,
+   "q05": -0.3192456453496954,
+   "q95": 0.357502802074872
+  },
+  {
+   "nfl_id": 57194,
+   "side": "blocker",
+   "reps": 90,
+   "rating_mean": 0.012335800072954057,
+   "rating_sd": 0.21390861533501823,
+   "q05": -0.3403578302678781,
+   "q95": 0.3604961983550143
+  },
+  {
+   "nfl_id": 57337,
+   "side": "blocker",
+   "reps": 65,
+   "rating_mean": -0.11555978339886269,
+   "rating_sd": 0.22600393062914018,
+   "q05": -0.5185934011021431,
+   "q95": 0.22511964944454954
+  },
+  {
+   "nfl_id": 57180,
+   "side": "blocker",
+   "reps": 58,
+   "rating_mean": -0.032378383131348366,
+   "rating_sd": 0.20744859812528335,
+   "q05": -0.3814463744018434,
+   "q95": 0.2981777276915292
+  },
+  {
+   "nfl_id": 57238,
+   "side": "blocker",
+   "reps": 184,
+   "rating_mean": -0.02048938093541541,
+   "rating_sd": 0.187990602006811,
+   "q05": -0.3338718635024457,
+   "q95": 0.29832406256073923
+  },
+  {
+   "nfl_id": 57240,
+   "side": "blocker",
+   "reps": 142,
+   "rating_mean": 0.036655042151344255,
+   "rating_sd": 0.19127285086828683,
+   "q05": -0.26707234749147624,
+   "q95": 0.36591491223050776
+  },
+  {
+   "nfl_id": 57165,
+   "side": "blocker",
+   "reps": 97,
+   "rating_mean": 0.024949114003889925,
+   "rating_sd": 0.19558851871542735,
+   "q05": -0.2891053680796147,
+   "q95": 0.3605777821109374
+  },
+  {
+   "nfl_id": 57198,
+   "side": "blocker",
+   "reps": 236,
+   "rating_mean": -0.11063910132836706,
+   "rating_sd": 0.1604696139901335,
+   "q05": -0.38552017627923635,
+   "q95": 0.1395846446583127
+  },
+  {
+   "nfl_id": 57183,
+   "side": "blocker",
+   "reps": 169,
+   "rating_mean": 0.13130738870550068,
+   "rating_sd": 0.18350678237067194,
+   "q05": -0.1464251537052552,
+   "q95": 0.45590529770033394
+  },
+  {
+   "nfl_id": 57176,
+   "side": "blocker",
+   "reps": 169,
+   "rating_mean": 0.11804399573090923,
+   "rating_sd": 0.19351988537211529,
+   "q05": -0.17015273502485953,
+   "q95": 0.45915216026115424
+  },
+  {
+   "nfl_id": 56572,
+   "side": "blocker",
+   "reps": 57,
+   "rating_mean": -0.07092245545993733,
+   "rating_sd": 0.20084716644171424,
+   "q05": -0.41084015456771245,
+   "q95": 0.2416070471711554
+  },
+  {
+   "nfl_id": 55930,
+   "side": "blocker",
+   "reps": 117,
+   "rating_mean": 0.2362237733175266,
+   "rating_sd": 0.2142225515984865,
+   "q05": -0.06222837092614722,
+   "q95": 0.6229490695358169
+  },
+  {
+   "nfl_id": 57299,
+   "side": "blocker",
+   "reps": 50,
+   "rating_mean": 0.1467257490744544,
+   "rating_sd": 0.2255356688483075,
+   "q05": -0.18217098875146956,
+   "q95": 0.5487084041316855
+  },
+  {
+   "nfl_id": 57330,
+   "side": "blocker",
+   "reps": 99,
+   "rating_mean": -0.1383120179954382,
+   "rating_sd": 0.20453834455800882,
+   "q05": -0.49044541610812026,
+   "q95": 0.1654996208956684
+  },
+  {
+   "nfl_id": 57283,
+   "side": "blocker",
+   "reps": 4,
+   "rating_mean": -0.06993088528706529,
+   "rating_sd": 0.23633169849911698,
+   "q05": -0.4813098915627477,
+   "q95": 0.29119647077213906
+  },
+  {
+   "nfl_id": 57310,
+   "side": "blocker",
+   "reps": 1,
+   "rating_mean": -0.004280960442861772,
+   "rating_sd": 0.23270028016154742,
+   "q05": -0.3824797772297874,
+   "q95": 0.3753505938336234
+  },
+  {
+   "nfl_id": 57262,
+   "side": "blocker",
+   "reps": 12,
+   "rating_mean": 0.004975887853725789,
+   "rating_sd": 0.22933122415999924,
+   "q05": -0.3770332421641769,
+   "q95": 0.38472586633923656
+  },
+  {
+   "nfl_id": 58214,
+   "side": "blocker",
+   "reps": 96,
+   "rating_mean": 0.09478571322269383,
+   "rating_sd": 0.21245664584381616,
+   "q05": -0.23011620978906083,
+   "q95": 0.4639405980501628
+  },
+  {
+   "nfl_id": 58286,
+   "side": "blocker",
+   "reps": 106,
+   "rating_mean": 0.0745253046223838,
+   "rating_sd": 0.19907865574782085,
+   "q05": -0.23040543906466857,
+   "q95": 0.41875570549897545
+  },
+  {
+   "nfl_id": 58242,
+   "side": "blocker",
+   "reps": 109,
+   "rating_mean": -0.07799102500052413,
+   "rating_sd": 0.196355735620774,
+   "q05": -0.42331938842866174,
+   "q95": 0.22689773324046014
+  },
+  {
+   "nfl_id": 58300,
+   "side": "blocker",
+   "reps": 159,
+   "rating_mean": -0.07590575594612811,
+   "rating_sd": 0.18029990838494322,
+   "q05": -0.3914523120252805,
+   "q95": 0.21462274071080217
+  },
+  {
+   "nfl_id": 58206,
+   "side": "blocker",
+   "reps": 126,
+   "rating_mean": -0.1291117579607746,
+   "rating_sd": 0.19024769003692243,
+   "q05": -0.464529847753214,
+   "q95": 0.16184315827370677
+  },
+  {
+   "nfl_id": 58211,
+   "side": "blocker",
+   "reps": 172,
+   "rating_mean": -0.10694026721976331,
+   "rating_sd": 0.17807470100672423,
+   "q05": -0.4191263644503204,
+   "q95": 0.17216122837458178
+  },
+  {
+   "nfl_id": 57141,
+   "side": "blocker",
+   "reps": 92,
+   "rating_mean": 0.039091886763917824,
+   "rating_sd": 0.20068455340338065,
+   "q05": -0.2766894629476584,
+   "q95": 0.3819772611792115
+  },
+  {
+   "nfl_id": 58209,
+   "side": "blocker",
+   "reps": 126,
+   "rating_mean": 0.13279624966167877,
+   "rating_sd": 0.18821868234602657,
+   "q05": -0.15333363806270509,
+   "q95": 0.45967913329942534
+  },
+  {
+   "nfl_id": 58220,
+   "side": "blocker",
+   "reps": 188,
+   "rating_mean": 0.16842036624895668,
+   "rating_sd": 0.19813158330236919,
+   "q05": -0.12094866763240386,
+   "q95": 0.5190977874101431
+  },
+  {
+   "nfl_id": 58262,
+   "side": "blocker",
+   "reps": 163,
+   "rating_mean": 0.07750336876981291,
+   "rating_sd": 0.18529214216228732,
+   "q05": -0.21175352155875524,
+   "q95": 0.4030509759368707
+  },
+  {
+   "nfl_id": 58253,
+   "side": "blocker",
+   "reps": 137,
+   "rating_mean": 0.021499236454566095,
+   "rating_sd": 0.18660745238160045,
+   "q05": -0.2786036838429631,
+   "q95": 0.33276904570885224
+  },
+  {
+   "nfl_id": 58226,
+   "side": "blocker",
+   "reps": 116,
+   "rating_mean": -0.16246814673792476,
+   "rating_sd": 0.18866766093226284,
+   "q05": -0.5017377101393647,
+   "q95": 0.11904503660311022
+  },
+  {
+   "nfl_id": 58259,
+   "side": "blocker",
+   "reps": 76,
+   "rating_mean": -0.10518755923792898,
+   "rating_sd": 0.2084079685065919,
+   "q05": -0.4612164892976526,
+   "q95": 0.21519438356537327
+  },
+  {
+   "nfl_id": 58231,
+   "side": "blocker",
+   "reps": 98,
+   "rating_mean": -0.02066629960131702,
+   "rating_sd": 0.1876766831644254,
+   "q05": -0.33418063917607155,
+   "q95": 0.2880540255548338
+  },
+  {
+   "nfl_id": 58359,
+   "side": "blocker",
+   "reps": 33,
+   "rating_mean": -0.1467540631090516,
+   "rating_sd": 0.22962613439632557,
+   "q05": -0.5625557341561961,
+   "q95": 0.18720179098349513
+  },
+  {
+   "nfl_id": 57297,
+   "side": "blocker",
+   "reps": 20,
+   "rating_mean": 0.022848903022603822,
+   "rating_sd": 0.2251520892005684,
+   "q05": -0.33943337727345857,
+   "q95": 0.41010293854915114
+  },
+  {
+   "nfl_id": 57374,
+   "side": "blocker",
+   "reps": 90,
+   "rating_mean": -0.168736190299253,
+   "rating_sd": 0.2039464535690024,
+   "q05": -0.5304737020151488,
+   "q95": 0.12508468550907043
+  },
+  {
+   "nfl_id": 58358,
+   "side": "blocker",
+   "reps": 91,
+   "rating_mean": -0.21684967136780472,
+   "rating_sd": 0.22088402367366072,
+   "q05": -0.6071247760263553,
+   "q95": 0.09554278216463213
+  },
+  {
+   "nfl_id": 58987,
+   "side": "blocker",
+   "reps": 32,
+   "rating_mean": -0.04973690929571754,
+   "rating_sd": 0.22866609815211142,
+   "q05": -0.4441671231078774,
+   "q95": 0.3170954968772597
+  },
+  {
+   "nfl_id": 58454,
+   "side": "blocker",
+   "reps": 77,
+   "rating_mean": -0.1427763587371811,
+   "rating_sd": 0.21425844902649452,
+   "q05": -0.5256977264361193,
+   "q95": 0.17955623778207389
+  },
+  {
+   "nfl_id": 57353,
+   "side": "blocker",
+   "reps": 32,
+   "rating_mean": -0.011988246686002636,
+   "rating_sd": 0.21495455583173084,
+   "q05": -0.36495541115382957,
+   "q95": 0.347707904074048
+  },
+  {
+   "nfl_id": 56090,
+   "side": "blocker",
+   "reps": 1,
+   "rating_mean": 0.014945457915879206,
+   "rating_sd": 0.22399233444411545,
+   "q05": -0.34575792374734976,
+   "q95": 0.38537572940839093
+  },
+  {
+   "nfl_id": 58261,
+   "side": "blocker",
+   "reps": 68,
+   "rating_mean": 0.06805288982460811,
+   "rating_sd": 0.2044490395792196,
+   "q05": -0.25220710233781973,
+   "q95": 0.41421664334255415
+  },
+  {
+   "nfl_id": 58294,
+   "side": "blocker",
+   "reps": 4,
+   "rating_mean": -0.03824688324218051,
+   "rating_sd": 0.2294436679951534,
+   "q05": -0.42684751756615447,
+   "q95": 0.32858645661116775
+  },
+  {
+   "nfl_id": 58303,
+   "side": "blocker",
+   "reps": 19,
+   "rating_mean": -0.001713580194694936,
+   "rating_sd": 0.21548323546093506,
+   "q05": -0.35055645934905383,
+   "q95": 0.3570054154640226
+  },
+  {
+   "nfl_id": 58376,
+   "side": "blocker",
+   "reps": 12,
+   "rating_mean": -0.06571976545454086,
+   "rating_sd": 0.23261555637938908,
+   "q05": -0.4623404042361406,
+   "q95": 0.294523316337511
+  },
+  {
+   "nfl_id": 58332,
+   "side": "blocker",
+   "reps": 38,
+   "rating_mean": 0.034966075377577975,
+   "rating_sd": 0.22535888777373966,
+   "q05": -0.3248123590373868,
+   "q95": 0.4203209677641918
+  },
+  {
+   "nfl_id": 55987,
+   "side": "blocker",
+   "reps": 84,
+   "rating_mean": -0.06532165827398831,
+   "rating_sd": 0.18788294965582833,
+   "q05": -0.37910348842698394,
+   "q95": 0.22670944929935397
+  },
+  {
+   "nfl_id": 58416,
+   "side": "blocker",
+   "reps": 9,
+   "rating_mean": -0.15340345748028544,
+   "rating_sd": 0.2448645421609641,
+   "q05": -0.5937879249645671,
+   "q95": 0.20542986288163048
+  },
+  {
+   "nfl_id": 57284,
+   "side": "blocker",
+   "reps": 8,
+   "rating_mean": 0.03833635182481637,
+   "rating_sd": 0.23083462277780628,
+   "q05": -0.32523395442826525,
+   "q95": 0.43085876920257654
+  },
+  {
+   "nfl_id": 57335,
+   "side": "blocker",
+   "reps": 2,
+   "rating_mean": 0.006549749037802409,
+   "rating_sd": 0.2330004737054486,
+   "q05": -0.36568698595482,
+   "q95": 0.3904333173011454
+  },
+  {
+   "nfl_id": 58296,
+   "side": "blocker",
+   "reps": 4,
+   "rating_mean": 0.032786743504018764,
+   "rating_sd": 0.22502647666036926,
+   "q05": -0.3203360928308289,
+   "q95": 0.40470527989086097
+  },
+  {
+   "nfl_id": 56021,
+   "side": "blocker",
+   "reps": 21,
+   "rating_mean": 0.10142278172821739,
+   "rating_sd": 0.2252169899701371,
+   "q05": -0.24017209958442887,
+   "q95": 0.49740036289443373
+  },
+  {
+   "nfl_id": 55877,
+   "side": "rusher",
+   "reps": 124,
+   "rating_mean": 0.12862659303214274,
+   "rating_sd": 0.20942429850593614,
+   "q05": -0.19654138481270622,
+   "q95": 0.4867171469773616
+  },
+  {
+   "nfl_id": 55879,
+   "side": "rusher",
+   "reps": 264,
+   "rating_mean": 0.2317295845154713,
+   "rating_sd": 0.18867010963057396,
+   "q05": -0.06424686223330371,
+   "q95": 0.5552155622593412
+  },
+  {
+   "nfl_id": 55929,
+   "side": "rusher",
+   "reps": 32,
+   "rating_mean": -0.021734200816108894,
+   "rating_sd": 0.274939574049763,
+   "q05": -0.4644754609696852,
+   "q95": 0.4194907099948703
+  },
+  {
+   "nfl_id": 55947,
+   "side": "rusher",
+   "reps": 278,
+   "rating_mean": 0.31734752177110703,
+   "rating_sd": 0.1879128892089026,
+   "q05": 0.009951742578423916,
+   "q95": 0.6334736081419438
+  },
+  {
+   "nfl_id": 55918,
+   "side": "rusher",
+   "reps": 335,
+   "rating_mean": -0.21121869275180508,
+   "rating_sd": 0.18701946798725946,
+   "q05": -0.529776652260314,
+   "q95": 0.08475369593702968
+  },
+  {
+   "nfl_id": 56078,
+   "side": "rusher",
+   "reps": 219,
+   "rating_mean": -0.03851479300817155,
+   "rating_sd": 0.20895006412483658,
+   "q05": -0.3786124639320012,
+   "q95": 0.2955849398909438
+  },
+  {
+   "nfl_id": 55914,
+   "side": "rusher",
+   "reps": 287,
+   "rating_mean": 0.17507497083910115,
+   "rating_sd": 0.19166653701089215,
+   "q05": -0.12575353064333325,
+   "q95": 0.49823541789794606
+  },
+  {
+   "nfl_id": 55867,
+   "side": "rusher",
+   "reps": 273,
+   "rating_mean": 0.2338434929666113,
+   "rating_sd": 0.19027065994589185,
+   "q05": -0.06961540135113889,
+   "q95": 0.5581880805640037
+  },
+  {
+   "nfl_id": 55995,
+   "side": "rusher",
+   "reps": 90,
+   "rating_mean": -0.21177465067889875,
+   "rating_sd": 0.2757240882247656,
+   "q05": -0.6889483504850329,
+   "q95": 0.20386026399709845
+  },
+  {
+   "nfl_id": 55989,
+   "side": "rusher",
+   "reps": 182,
+   "rating_mean": -0.18290788571297129,
+   "rating_sd": 0.20840348826824254,
+   "q05": -0.5421199104921555,
+   "q95": 0.14299557351951786
+  },
+  {
+   "nfl_id": 55974,
+   "side": "rusher",
+   "reps": 96,
+   "rating_mean": -0.26790801375821094,
+   "rating_sd": 0.25497863032821527,
+   "q05": -0.7265538516051958,
+   "q95": 0.10995464161019627
+  },
+  {
+   "nfl_id": 55975,
+   "side": "rusher",
+   "reps": 200,
+   "rating_mean": 0.013044836206188017,
+   "rating_sd": 0.1981471173419383,
+   "q05": -0.31069228233681345,
+   "q95": 0.33711876460538875
+  },
+  {
+   "nfl_id": 55942,
+   "side": "rusher",
+   "reps": 215,
+   "rating_mean": 0.29462369198183985,
+   "rating_sd": 0.19427011082584425,
+   "q05": -0.011339268137309613,
+   "q95": 0.622240692826887
+  },
+  {
+   "nfl_id": 55911,
+   "side": "rusher",
+   "reps": 230,
+   "rating_mean": 0.07460907343188601,
+   "rating_sd": 0.18758857028954187,
+   "q05": -0.22605656146775277,
+   "q95": 0.3953117733161039
+  },
+  {
+   "nfl_id": 55988,
+   "side": "rusher",
+   "reps": 9,
+   "rating_mean": 0.009092663666770013,
+   "rating_sd": 0.2982960815958958,
+   "q05": -0.4802848942048831,
+   "q95": 0.519674909719435
+  },
+  {
+   "nfl_id": 55919,
+   "side": "rusher",
+   "reps": 265,
+   "rating_mean": 0.09473037608502992,
+   "rating_sd": 0.17533751518649798,
+   "q05": -0.1970115693170564,
+   "q95": 0.3906855878519563
+  },
+  {
+   "nfl_id": 55991,
+   "side": "rusher",
+   "reps": 158,
+   "rating_mean": 0.04666538041311653,
+   "rating_sd": 0.2057727177262472,
+   "q05": -0.2812677048840797,
+   "q95": 0.3911912348419168
+  },
+  {
+   "nfl_id": 56096,
+   "side": "rusher",
+   "reps": 15,
+   "rating_mean": 0.019407444184626997,
+   "rating_sd": 0.2839174804798419,
+   "q05": -0.44459010345802114,
+   "q95": 0.4990872915373733
+  },
+  {
+   "nfl_id": 56461,
+   "side": "rusher",
+   "reps": 29,
+   "rating_mean": -0.1827894437947997,
+   "rating_sd": 0.28363085313763253,
+   "q05": -0.6766247170710347,
+   "q95": 0.2505160539325985
+  },
+  {
+   "nfl_id": 56514,
+   "side": "rusher",
+   "reps": 59,
+   "rating_mean": 0.0005357801586701014,
+   "rating_sd": 0.26471930735491245,
+   "q05": -0.43288417953196495,
+   "q95": 0.43787923013255065
+  },
+  {
+   "nfl_id": 56059,
+   "side": "rusher",
+   "reps": 18,
+   "rating_mean": -0.06303319704775207,
+   "rating_sd": 0.2937053601540682,
+   "q05": -0.5541408352500417,
+   "q95": 0.4024804267271251
+  },
+  {
+   "nfl_id": 56038,
+   "side": "rusher",
+   "reps": 42,
+   "rating_mean": 0.02795625279937119,
+   "rating_sd": 0.25038045294518585,
+   "q05": -0.39369799785876103,
+   "q95": 0.44451040213980547
+  },
+  {
+   "nfl_id": 55963,
+   "side": "rusher",
+   "reps": 5,
+   "rating_mean": -0.010172427571446558,
+   "rating_sd": 0.2975152201447429,
+   "q05": -0.49983919577203484,
+   "q95": 0.4731662114260686
+  },
+  {
+   "nfl_id": 57216,
+   "side": "rusher",
+   "reps": 44,
+   "rating_mean": -0.16719338526280125,
+   "rating_sd": 0.275722068367258,
+   "q05": -0.6456279326824033,
+   "q95": 0.25258848211403556
+  },
+  {
+   "nfl_id": 57372,
+   "side": "rusher",
+   "reps": 53,
+   "rating_mean": -0.0029993517123742394,
+   "rating_sd": 0.2573454732249587,
+   "q05": -0.42576529223315623,
+   "q95": 0.42174937957384556
+  },
+  {
+   "nfl_id": 57265,
+   "side": "rusher",
+   "reps": 82,
+   "rating_mean": -0.04241698102311968,
+   "rating_sd": 0.22887068477242728,
+   "q05": -0.4236049777400352,
+   "q95": 0.3317007636339751
+  },
+  {
+   "nfl_id": 57159,
+   "side": "rusher",
+   "reps": 157,
+   "rating_mean": 0.24168768881987968,
+   "rating_sd": 0.22617275093775477,
+   "q05": -0.10679697031457507,
+   "q95": 0.6314665261271035
+  },
+  {
+   "nfl_id": 56571,
+   "side": "rusher",
+   "reps": 30,
+   "rating_mean": -0.07933920078752198,
+   "rating_sd": 0.27642007494538845,
+   "q05": -0.5414328209252478,
+   "q95": 0.36554511527378236
+  },
+  {
+   "nfl_id": 57136,
+   "side": "rusher",
+   "reps": 182,
+   "rating_mean": 0.09818774234471596,
+   "rating_sd": 0.1954683209557523,
+   "q05": -0.22156124172600733,
+   "q95": 0.42560704946614136
+  },
+  {
+   "nfl_id": 57177,
+   "side": "rusher",
+   "reps": 25,
+   "rating_mean": -0.1092435943168462,
+   "rating_sd": 0.2879983441151513,
+   "q05": -0.606265416628786,
+   "q95": 0.3383171920982246
+  },
+  {
+   "nfl_id": 57342,
+   "side": "rusher",
+   "reps": 25,
+   "rating_mean": -0.14137952663291178,
+   "rating_sd": 0.28878957435502356,
+   "q05": -0.6365216094964342,
+   "q95": 0.3054632810764859
+  },
+  {
+   "nfl_id": 57309,
+   "side": "rusher",
+   "reps": 60,
+   "rating_mean": -0.1503123686679274,
+   "rating_sd": 0.26113243785103263,
+   "q05": -0.5993411279721175,
+   "q95": 0.2566605093583834
+  },
+  {
+   "nfl_id": 55905,
+   "side": "rusher",
+   "reps": 9,
+   "rating_mean": 0.022797781541786553,
+   "rating_sd": 0.2908030477784951,
+   "q05": -0.4539093021441869,
+   "q95": 0.49521307841392326
+  },
+  {
+   "nfl_id": 57356,
+   "side": "rusher",
+   "reps": 9,
+   "rating_mean": -0.0455899251923362,
+   "rating_sd": 0.2834532484346231,
+   "q05": -0.5229389124060867,
+   "q95": 0.41035786521894024
+  },
+  {
+   "nfl_id": 56001,
+   "side": "rusher",
+   "reps": 11,
+   "rating_mean": -0.07188892013372558,
+   "rating_sd": 0.30091579135938845,
+   "q05": -0.5707456913584426,
+   "q95": 0.408088577275228
+  },
+  {
+   "nfl_id": 57137,
+   "side": "rusher",
+   "reps": 277,
+   "rating_mean": 0.04849807727384324,
+   "rating_sd": 0.18283121306004116,
+   "q05": -0.25211232139527917,
+   "q95": 0.35344396232693664
+  },
+  {
+   "nfl_id": 57160,
+   "side": "rusher",
+   "reps": 344,
+   "rating_mean": 0.28367468861009154,
+   "rating_sd": 0.17690017365147676,
+   "q05": 0.001554256537238456,
+   "q95": 0.5823885304735317
+  },
+  {
+   "nfl_id": 57140,
+   "side": "rusher",
+   "reps": 215,
+   "rating_mean": 0.16220662200227007,
+   "rating_sd": 0.19024032068964686,
+   "q05": -0.14056761170773477,
+   "q95": 0.49239856473037674
+  },
+  {
+   "nfl_id": 57434,
+   "side": "rusher",
+   "reps": 63,
+   "rating_mean": 0.03483712916235957,
+   "rating_sd": 0.25824677875547464,
+   "q05": -0.3760341246706695,
+   "q95": 0.45898876400912775
+  },
+  {
+   "nfl_id": 56456,
+   "side": "rusher",
+   "reps": 15,
+   "rating_mean": -0.05077925332302366,
+   "rating_sd": 0.27772421160442956,
+   "q05": -0.5332425104076371,
+   "q95": 0.3934800832836918
+  },
+  {
+   "nfl_id": 56497,
+   "side": "rusher",
+   "reps": 222,
+   "rating_mean": 0.28133483809132614,
+   "rating_sd": 0.21897215285427907,
+   "q05": -0.058841463533636076,
+   "q95": 0.6514469314732292
+  },
+  {
+   "nfl_id": 57142,
+   "side": "rusher",
+   "reps": 146,
+   "rating_mean": 0.27550281570339874,
+   "rating_sd": 0.2147669746684103,
+   "q05": -0.056576516364036024,
+   "q95": 0.6449487190177947
+  },
+  {
+   "nfl_id": 57169,
+   "side": "rusher",
+   "reps": 207,
+   "rating_mean": -0.1842636871085479,
+   "rating_sd": 0.2164822655849592,
+   "q05": -0.5577822126436864,
+   "q95": 0.15297556737608217
+  },
+  {
+   "nfl_id": 57156,
+   "side": "rusher",
+   "reps": 173,
+   "rating_mean": 0.4139958064245901,
+   "rating_sd": 0.2222067189893896,
+   "q05": 0.06353616656109418,
+   "q95": 0.79201966507837
+  },
+  {
+   "nfl_id": 56510,
+   "side": "rusher",
+   "reps": 5,
+   "rating_mean": -0.07816590242793145,
+   "rating_sd": 0.2942811337936638,
+   "q05": -0.5623604241280432,
+   "q95": 0.3867181778639319
+  },
+  {
+   "nfl_id": 57317,
+   "side": "rusher",
+   "reps": 32,
+   "rating_mean": -0.14245412537527852,
+   "rating_sd": 0.2738664926091287,
+   "q05": -0.6146892798733941,
+   "q95": 0.27872177504094564
+  },
+  {
+   "nfl_id": 57289,
+   "side": "rusher",
+   "reps": 65,
+   "rating_mean": -0.041820885967035946,
+   "rating_sd": 0.23766429461070776,
+   "q05": -0.44336580681439935,
+   "q95": 0.33836628817403397
+  },
+  {
+   "nfl_id": 56061,
+   "side": "rusher",
+   "reps": 13,
+   "rating_mean": -0.031255786045881445,
+   "rating_sd": 0.28402824729816284,
+   "q05": -0.5050003435444819,
+   "q95": 0.430490754034252
+  },
+  {
+   "nfl_id": 57218,
+   "side": "rusher",
+   "reps": 94,
+   "rating_mean": 0.09126793225994288,
+   "rating_sd": 0.25388797913616007,
+   "q05": -0.31465624374145634,
+   "q95": 0.5117594533287079
+  },
+  {
+   "nfl_id": 57215,
+   "side": "rusher",
+   "reps": 82,
+   "rating_mean": 0.11977342026722877,
+   "rating_sd": 0.23592914494793055,
+   "q05": -0.2603906251445081,
+   "q95": 0.5151881455719853
+  },
+  {
+   "nfl_id": 57334,
+   "side": "rusher",
+   "reps": 64,
+   "rating_mean": -0.18626985638880084,
+   "rating_sd": 0.25094994394914283,
+   "q05": -0.6246561265047588,
+   "q95": 0.19934562405795975
+  },
+  {
+   "nfl_id": 57436,
+   "side": "rusher",
+   "reps": 17,
+   "rating_mean": -0.04188305003096217,
+   "rating_sd": 0.29670129314173876,
+   "q05": -0.5360250281409615,
+   "q95": 0.4237855037196964
+  },
+  {
+   "nfl_id": 56218,
+   "side": "rusher",
+   "reps": 31,
+   "rating_mean": 0.05059440342688623,
+   "rating_sd": 0.26746494205432453,
+   "q05": -0.38389674880440366,
+   "q95": 0.5003612211122895
+  },
+  {
+   "nfl_id": 57226,
+   "side": "rusher",
+   "reps": 116,
+   "rating_mean": -0.15303968603777082,
+   "rating_sd": 0.22959006957293884,
+   "q05": -0.5465885677625221,
+   "q95": 0.20308629485197452
+  },
+  {
+   "nfl_id": 57230,
+   "side": "rusher",
+   "reps": 116,
+   "rating_mean": 0.1260183901433633,
+   "rating_sd": 0.22170763199128413,
+   "q05": -0.2222495610745464,
+   "q95": 0.4980243344758656
+  },
+  {
+   "nfl_id": 57148,
+   "side": "rusher",
+   "reps": 122,
+   "rating_mean": -0.3834419806880684,
+   "rating_sd": 0.277576159299906,
+   "q05": -0.8883977502210673,
+   "q95": 0.01952386996283008
+  },
+  {
+   "nfl_id": 57358,
+   "side": "rusher",
+   "reps": 8,
+   "rating_mean": 0.026635938774836804,
+   "rating_sd": 0.3010518428540441,
+   "q05": -0.45931762963743733,
+   "q95": 0.5378130801615052
+  },
+  {
+   "nfl_id": 57409,
+   "side": "rusher",
+   "reps": 4,
+   "rating_mean": -0.027548551721103643,
+   "rating_sd": 0.29169458077845756,
+   "q05": -0.5194651035044079,
+   "q95": 0.44934107772525356
+  },
+  {
+   "nfl_id": 58271,
+   "side": "rusher",
+   "reps": 77,
+   "rating_mean": -0.03807180077410109,
+   "rating_sd": 0.24105950839009338,
+   "q05": -0.4380695308718178,
+   "q95": 0.35689628763746345
+  },
+  {
+   "nfl_id": 58362,
+   "side": "rusher",
+   "reps": 147,
+   "rating_mean": 0.34126154082667326,
+   "rating_sd": 0.22863738457939045,
+   "q05": -0.01228132158178516,
+   "q95": 0.7287445061229041
+  },
+  {
+   "nfl_id": 58348,
+   "side": "rusher",
+   "reps": 57,
+   "rating_mean": -0.2519018041505683,
+   "rating_sd": 0.28332200407963326,
+   "q05": -0.7455945247408722,
+   "q95": 0.1745285916533405
+  },
+  {
+   "nfl_id": 58282,
+   "side": "rusher",
+   "reps": 45,
+   "rating_mean": -0.2585266904087035,
+   "rating_sd": 0.27490326343646193,
+   "q05": -0.7343465085019778,
+   "q95": 0.16323841267406922
+  },
+  {
+   "nfl_id": 58256,
+   "side": "rusher",
+   "reps": 101,
+   "rating_mean": 0.05778271304745024,
+   "rating_sd": 0.23045960745285626,
+   "q05": -0.3218020234811425,
+   "q95": 0.4399685231564186
+  },
+  {
+   "nfl_id": 58342,
+   "side": "rusher",
+   "reps": 44,
+   "rating_mean": -0.011267475091650474,
+   "rating_sd": 0.26903658415256765,
+   "q05": -0.448595934995118,
+   "q95": 0.4347678464543503
+  },
+  {
+   "nfl_id": 58340,
+   "side": "rusher",
+   "reps": 38,
+   "rating_mean": 0.0017861185905881807,
+   "rating_sd": 0.27210669268039284,
+   "q05": -0.4534197262614076,
+   "q95": 0.44475268347370117
+  },
+  {
+   "nfl_id": 58459,
+   "side": "rusher",
+   "reps": 7,
+   "rating_mean": -0.06185255786387725,
+   "rating_sd": 0.29228031530697346,
+   "q05": -0.552322923925296,
+   "q95": 0.40966665034196714
+  },
+  {
+   "nfl_id": 58283,
+   "side": "rusher",
+   "reps": 32,
+   "rating_mean": 0.0741957614578923,
+   "rating_sd": 0.27198091565994587,
+   "q05": -0.3537370660452642,
+   "q95": 0.5392055060992161
+  },
+  {
+   "nfl_id": 58381,
+   "side": "rusher",
+   "reps": 10,
+   "rating_mean": -0.041526403345275284,
+   "rating_sd": 0.287872381186582,
+   "q05": -0.521609383437576,
+   "q95": 0.41772381669454617
+  },
+  {
+   "nfl_id": 58369,
+   "side": "rusher",
+   "reps": 75,
+   "rating_mean": -0.19905055342851,
+   "rating_sd": 0.2685908927576448,
+   "q05": -0.665004202462711,
+   "q95": 0.21792116676183362
+  },
+  {
+   "nfl_id": 58328,
+   "side": "rusher",
+   "reps": 40,
+   "rating_mean": -0.01841562398014844,
+   "rating_sd": 0.2556736683875607,
+   "q05": -0.4332284098276051,
+   "q95": 0.4028039252310372
+  },
+  {
+   "nfl_id": 58248,
+   "side": "rusher",
+   "reps": 81,
+   "rating_mean": -0.07827485729371099,
+   "rating_sd": 0.2517453441411091,
+   "q05": -0.5136729853625887,
+   "q95": 0.32826771369661734
+  },
+  {
+   "nfl_id": 58318,
+   "side": "rusher",
+   "reps": 50,
+   "rating_mean": -0.2405389870512099,
+   "rating_sd": 0.28503551379575054,
+   "q05": -0.7281765403459152,
+   "q95": 0.1868588537876026
+  },
+  {
+   "nfl_id": 58486,
+   "side": "rusher",
+   "reps": 35,
+   "rating_mean": -0.09561003113881622,
+   "rating_sd": 0.27780228444751265,
+   "q05": -0.565362055453023,
+   "q95": 0.33755883315458896
+  },
+  {
+   "nfl_id": 58415,
+   "side": "rusher",
+   "reps": 21,
+   "rating_mean": -0.04144464716565318,
+   "rating_sd": 0.2882698852689138,
+   "q05": -0.5163962449331102,
+   "q95": 0.42518774263185355
+  },
+  {
+   "nfl_id": 58344,
+   "side": "rusher",
+   "reps": 33,
+   "rating_mean": 0.002134599979295408,
+   "rating_sd": 0.28097571962322276,
+   "q05": -0.45741660529801814,
+   "q95": 0.45034301193216514
+  },
+  {
+   "nfl_id": 58329,
+   "side": "rusher",
+   "reps": 57,
+   "rating_mean": -0.055832666719481165,
+   "rating_sd": 0.2446804718209093,
+   "q05": -0.4680237622205887,
+   "q95": 0.3341320162675547
+  },
+  {
+   "nfl_id": 58270,
+   "side": "rusher",
+   "reps": 74,
+   "rating_mean": 0.12560826255019208,
+   "rating_sd": 0.24641640480842167,
+   "q05": -0.26291962517358664,
+   "q95": 0.5376062131979183
+  },
+  {
+   "nfl_id": 58249,
+   "side": "rusher",
+   "reps": 57,
+   "rating_mean": -0.017930644138018047,
+   "rating_sd": 0.24136347882587658,
+   "q05": -0.41920309742072526,
+   "q95": 0.3739988501341361
+  },
+  {
+   "nfl_id": 58230,
+   "side": "rusher",
+   "reps": 92,
+   "rating_mean": -0.06920186979993702,
+   "rating_sd": 0.24748264163867728,
+   "q05": -0.4862394701632215,
+   "q95": 0.32655838584733127
+  },
+  {
+   "nfl_id": 58314,
+   "side": "rusher",
+   "reps": 116,
+   "rating_mean": -0.056932047969188715,
+   "rating_sd": 0.23566700988639291,
+   "q05": -0.4559421883522881,
+   "q95": 0.3201645861714275
+  },
+  {
+   "nfl_id": 57298,
+   "side": "rusher",
+   "reps": 13,
+   "rating_mean": 0.10194581058416746,
+   "rating_sd": 0.29790181796504067,
+   "q05": -0.35713952465267523,
+   "q95": 0.5991255330202546
+  },
+  {
+   "nfl_id": 56026,
+   "side": "rusher",
+   "reps": 12,
+   "rating_mean": -0.09713756227987054,
+   "rating_sd": 0.29115478877470974,
+   "q05": -0.5978363103190161,
+   "q95": 0.37264304756925615
+  },
+  {
+   "nfl_id": 58353,
+   "side": "rusher",
+   "reps": 33,
+   "rating_mean": 0.07338893327836049,
+   "rating_sd": 0.277676568153814,
+   "q05": -0.37090484810853497,
+   "q95": 0.5340584701212941
+  },
+  {
+   "nfl_id": 58257,
+   "side": "rusher",
+   "reps": 9,
+   "rating_mean": 0.14463273622063486,
+   "rating_sd": 0.29753808185629205,
+   "q05": -0.29324006494820887,
+   "q95": 0.6567832050217547
+  },
+  {
+   "nfl_id": 58825,
+   "side": "rusher",
+   "reps": 23,
+   "rating_mean": 0.10603354317163849,
+   "rating_sd": 0.27671640751647086,
+   "q05": -0.32742981968672014,
+   "q95": 0.5840721028934197
+  },
+  {
+   "nfl_id": 58345,
+   "side": "rusher",
+   "reps": 3,
+   "rating_mean": -0.0034215723919457882,
+   "rating_sd": 0.2962661488975222,
+   "q05": -0.4824238284955345,
+   "q95": 0.4865104921897052
+  },
+  {
+   "nfl_id": 58277,
+   "side": "rusher",
+   "reps": 1,
+   "rating_mean": 0.002212061992731582,
+   "rating_sd": 0.2896093153794216,
+   "q05": -0.4693464274294321,
+   "q95": 0.47853070794780417
+  },
+  {
+   "nfl_id": 58316,
+   "side": "rusher",
+   "reps": 8,
+   "rating_mean": -0.08776409670489976,
+   "rating_sd": 0.2890489602754518,
+   "q05": -0.5732170971849235,
+   "q95": 0.36161026787742334
+  },
+  {
+   "nfl_id": 58330,
+   "side": "rusher",
+   "reps": 4,
+   "rating_mean": -0.017913344169400516,
+   "rating_sd": 0.30563579427764487,
+   "q05": -0.5290929603536713,
+   "q95": 0.48677029585411535
+  },
+  {
+   "nfl_id": 58403,
+   "side": "rusher",
+   "reps": 59,
+   "rating_mean": 0.147562482655718,
+   "rating_sd": 0.2545153229084758,
+   "q05": -0.25580766721091747,
+   "q95": 0.5708422164292216
+  },
+  {
+   "nfl_id": 58937,
+   "side": "rusher",
+   "reps": 3,
+   "rating_mean": -0.02386882851770315,
+   "rating_sd": 0.3026841394605996,
+   "q05": -0.5313047595081061,
+   "q95": 0.4685196574420961
+  },
+  {
+   "nfl_id": 58845,
+   "side": "rusher",
+   "reps": 6,
+   "rating_mean": -0.023899357182763495,
+   "rating_sd": 0.29815505043121787,
+   "q05": -0.5228975292969841,
+   "q95": 0.45979799791102066
+  },
+  {
+   "nfl_id": 57279,
+   "side": "rusher",
+   "reps": 2,
+   "rating_mean": -0.026445770097960168,
+   "rating_sd": 0.31151500855598196,
+   "q05": -0.5460810643531671,
+   "q95": 0.4896327995491833
+  },
+  {
+   "nfl_id": 58458,
+   "side": "rusher",
+   "reps": 48,
+   "rating_mean": 0.023816081568800926,
+   "rating_sd": 0.26088117235980035,
+   "q05": -0.41319073180975957,
+   "q95": 0.45545236857391974
+  },
+  {
+   "nfl_id": 58810,
+   "side": "rusher",
+   "reps": 20,
+   "rating_mean": 0.03091715191761625,
+   "rating_sd": 0.281378691621849,
+   "q05": -0.41998772329427764,
+   "q95": 0.49350064351275885
+  },
+  {
+   "nfl_id": 58351,
+   "side": "rusher",
+   "reps": 8,
+   "rating_mean": -0.03378892166805703,
+   "rating_sd": 0.2908801591580538,
+   "q05": -0.5165942792823701,
+   "q95": 0.4405726590788501
+  },
+  {
+   "nfl_id": 58764,
+   "side": "rusher",
+   "reps": 3,
+   "rating_mean": -0.011317869656896245,
+   "rating_sd": 0.2986375408278752,
+   "q05": -0.5067362475355676,
+   "q95": 0.47256744684326674
+  }
+ ],
+ "surface": {
+  "rows": 578,
+  "draws": 500,
+  "p_min": 0.050592585524927056,
+  "p_max": 0.1565738656321461
+ },
+ "h1_final": {
+  "category": "Opposite",
+  "bayes_category": "Opposite",
+  "downgraded": false,
+  "label": "Opposite (qualified: Q1); Q4 failed (discordant: SA12, SA13)",
+  "q": {
+   "Q1": {
+    "status": "fail",
+    "value": "kappa-calibrated CI [-0.308, 0.000]"
+   },
+   "Q2": {
+    "status": "pass",
+    "value": "p = 0.0375"
+   },
+   "Q3": {
+    "status": "pass",
+    "value": "ratio = 0.275"
+   },
+   "Q4": {
+    "status": "fail",
+    "value": "discordant: SA12, SA13"
+   },
+   "Q5": {
+    "status": "pass",
+    "value": "SC2 not flagged"
+   }
+  },
+  "contingency_active": false,
+  "discordant": [
+   "SA12",
+   "SA13"
+  ],
+  "contingency_text": "INACTIVE (6 of 100 null intervals excluded 0; 0 of 100 final fits failed the convergence criteria, 9 escalated)",
+  "basis": "bayes"
+ },
+ "discordance": [
+  {
+   "id": "SA1",
+   "desc": "1.25 yd / 4 frames (double-team flag recomputed)",
+   "est": -0.2003187647227318,
+   "lo": -0.3407543150007242,
+   "hi": -0.054991251772170034,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA2",
+   "desc": "2.0 yd / 4 frames (double-team flag recomputed)",
+   "est": -0.1283701468043421,
+   "lo": -0.2690094246049731,
+   "hi": 0.01181520154122844,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA3",
+   "desc": "1.5 yd / 3 frames (double-team flag recomputed)",
+   "est": -0.15510047271611804,
+   "lo": -0.2993514591313487,
+   "hi": -0.006574705774633288,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA4",
+   "desc": "1.5 yd / 6 frames (double-team flag recomputed)",
+   "est": -0.17944814793116765,
+   "lo": -0.321291516713476,
+   "hi": -0.03602188890225615,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA5",
+   "desc": "REG only",
+   "est": -0.13934837264564046,
+   "lo": -0.28467737537178567,
+   "hi": 0.011258679497927124,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA6",
+   "desc": "Exclude double teams",
+   "est": -0.15814494332346193,
+   "lo": -0.30838552800694113,
+   "hi": -0.00529261254407711,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA7",
+   "desc": "Rushers with NFL position DE/DT/NT",
+   "est": -0.1568293308124027,
+   "lo": -0.3461389197356161,
+   "hi": 0.029464780183820136,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA9",
+   "desc": "One pair per (game, play, blocker), smallest min_dist",
+   "est": -0.1569560493120873,
+   "lo": -0.3080608100140633,
+   "hi": -0.012630809257731248,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA15",
+   "desc": "Complete cases for the dash (both players have a forty)",
+   "est": -0.15766051520887187,
+   "lo": -0.32734682700243234,
+   "hi": 0.01240021587254761,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA8",
+   "desc": "Dyad-equal weighting w = (N / D) / n_dyad (GLM only)",
+   "est": -0.11950003913778029,
+   "lo": -0.3409809676670354,
+   "hi": 0.10198088939147482,
+   "ref": -0.1541560368677475,
+   "discordant": false
+  },
+  {
+   "id": "SA10",
+   "desc": "Composite B",
+   "est": -0.10216096687186338,
+   "lo": -0.2327656115525767,
+   "hi": 0.03335200165931541,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA11",
+   "desc": "Composite A on the rows of P (common sample)",
+   "est": -0.13090327513300992,
+   "lo": -0.27827964117441367,
+   "hi": 0.0217178158211764,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA12",
+   "desc": "DL-only: rusher composite replaces gap",
+   "est": -0.041879717785125004,
+   "lo": -0.19685293331838033,
+   "hi": 0.12481984917315068,
+   "ref": -0.15252700248597068,
+   "discordant": true
+  },
+  {
+   "id": "SA13",
+   "desc": "5-frame smoothing composites (O3, D1 at k=5)",
+   "est": -0.0739905917677915,
+   "lo": -0.2272455835836198,
+   "hi": 0.08252566188917858,
+   "ref": -0.15252700248597068,
+   "discordant": true
+  },
+  {
+   "id": "SA14",
+   "desc": "No dropback spline",
+   "est": -0.09858418209627225,
+   "lo": -0.2387205786451606,
+   "hi": 0.044478046950828604,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA16",
+   "desc": "M2 plus s_lpick (pick asymmetry)",
+   "est": -0.12769974148165122,
+   "lo": -0.2768473798585538,
+   "hi": 0.02527454256103379,
+   "ref": -0.12482921661395241,
+   "discordant": false
+  },
+  {
+   "id": "SA17",
+   "desc": "M1 plus dyad random intercept",
+   "est": -0.14607610188764625,
+   "lo": -0.2943793007004568,
+   "hi": 0.003955362069165818,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA18_0.5",
+   "desc": "beta_gap prior Normal(0, 0.5)",
+   "est": -0.14886673843868187,
+   "lo": -0.29849912279115043,
+   "hi": 0.004740443277093799,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  },
+  {
+   "id": "SA18_2.5",
+   "desc": "beta_gap prior Normal(0, 2.5)",
+   "est": -0.1517438649906642,
+   "lo": -0.3006766748310064,
+   "hi": -0.005744454524831998,
+   "ref": -0.15252700248597068,
+   "discordant": false
+  }
+ ],
+ "verdict_sentence": "On 7214 engaged NFL pass-protection reps (69 blockers, 97 rushers), the athletic gap (rusher minus blocker) went with *less* pressure: -0.153 [-0.299, -0.005] log-odds per SD of the gap, about -1.06 percentage points per rep, equivalent to -0.90 SDs of draft-pick difference, beyond both players' size, stopwatch times and NGS athleticism score. Label: Opposite (qualified: Q1); Q4 failed (discordant: SA12, SA13). With draft slot also controlled (pre-registered secondary): Inconclusive, -0.125 [-0.273, 0.025]. With the 40-yard acceleration shape added to the composite (pre-registered secondary S0): Opposite, -0.154 [-0.288, -0.022]. Note: discordant sensitivities: SA12, SA13.",
+ "timings": {
+  "prepare": 0.41332364082336426,
+  "model:M1": 108.68549799919128,
+  "model:M2": 107.40913414955139,
+  "model:M0": 83.07552766799927,
+  "primary": 299.78994965553284,
+  "model:M1-A": 81.9937891960144,
+  "model:M2-A": 53.76905608177185,
+  "model:M1-S1": 324.2021541595459,
+  "model:M1-S2": 107.9668939113617,
+  "model:M1-S3a": 85.85612726211548,
+  "model:M1-S3b": 105.40028810501099,
+  "model:S5a": 20.49821424484253,
+  "model:S5b": 65.76034808158875,
+  "secondaries": 845.8849971294403,
+  "model:M1-PL": 176.8306908607483,
+  "model:M2-PL": 148.452397108078,
+  "model:SA1": 77.05979919433594,
+  "model:SA2": 80.70656394958496,
+  "model:SA3": 84.47557473182678,
+  "model:SA4": 70.09993481636047,
+  "model:SA5": 72.3056230545044,
+  "model:SA6": 64.71393513679504,
+  "model:SA7": 157.33499932289124,
+  "model:SA9": 79.68868231773376,
+  "model:SA15": 41.33992528915405,
+  "model:SA8": 0.24953961372375488,
+  "model:SA10": 34.02288317680359,
+  "model:SA11": 70.8507194519043,
+  "model:SA12": 208.11563968658447,
+  "model:SA13": 288.32763838768005,
+  "model:SA14": 69.16324782371521,
+  "model:SA16": 76.62124800682068,
+  "model:SA17": 217.27260375022888,
+  "model:SA18_0.5": 73.29411244392395,
+  "model:SA18_2.5": 283.14091396331787,
+  "sensitivities": 2048.8236141204834,
+  "model:SC2": 0.3286478519439697,
+  "model:SC3a": 0.8507277965545654,
+  "model:SC3b": 0.8374240398406982,
+  "model:SC4": 0.24854278564453125,
+  "selection": 2.8015429973602295,
+  "model:R": 60.48500609397888,
+  "model:M1-S2s": 79.27506470680237,
+  "ratings_surface": 147.9227113723755,
+  "total": 3829.5845012664795
+ }
+}
