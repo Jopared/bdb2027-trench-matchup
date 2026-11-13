@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bdb2027"
+version = "0.1.0"
+description = "NFL Big Data Bowl 2027: Combine tracking to NFL performance"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]

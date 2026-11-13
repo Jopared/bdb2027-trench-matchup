@@ -1,0 +1,8 @@
+# The pre-registration freeze (tag prereg-frozen) registered SHA-256 hashes of the
+# files below as they sit in the Windows checkout where the freeze was made. Two
+# of them have CRLF line endings and two have LF. Pin each so that a clone on any
+# platform reproduces the registered hashes and the frozen script's guards pass.
+scripts/confirmatory_analysis.py text eol=crlf
+src/bdb2027/traits.py text eol=crlf
+src/bdb2027/paths.py text eol=lf
+reports/preregistration.md text eol=lf

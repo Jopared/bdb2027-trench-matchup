@@ -1,0 +1,22 @@
+# Competition data is CC BY-NC 4.0 and may not be redistributed: never commit it.
+data/
+*.csv
+*.parquet
+*.zip
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Credentials
+kaggle.json
+.env
+
+# OS / editor
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
